@@ -1,0 +1,1174 @@
+<!doctype html><html><head><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"query","capabilities":{"artifact":"artifact.Kiow93e4.js","assets":"assets.DOAjpBS9.js","comments":"comments.DrhK3r8W.js","db":"db.zFlAA4qL.js","downloads":"downloads.axDW2QAi.js","embed":"embed.DcZf-TSv.js","endpoints":"endpoints.BPfoKaE1.js","files":"files.IkpCjcgM.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.DRL7voHn.js","sample":"sample.C7KQQdQj.js","self":"artifact.Kiow93e4.js","user":"user.CB0zJsP2.js"},"transforms":"_transforms.CkRgqq9F.js","comments":"_comments.DUaNQZcg.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.BzT912gi.js"}                                 </script><script>(function(){"use strict";function lr(t){return t==="cookie"||t==="query"?t:void 0}var Gn=3e5;function cr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var ur=["light","dark","system"],fr=/^[A-Za-z0-9_-]{1,64}$/,Rt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,dr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function hr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||dr.has(e)}var Tt="data-ldx-props";function pr(t,e){if(e.toLowerCase()===Tt)return!0;const r=t.getAttribute(Tt);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var zn="http://www.w3.org/1999/xhtml",mr="http://www.w3.org/2000/svg",vr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),_r=new Set(["script","style"]);function yr(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!vr.has(e):t.namespaceURI===mr?!_r.has(e):!1}function Ze(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function gr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&Ze(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&Ze(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function wr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:c,s:d}=gr(n,e);c===a&&d===0&&a===s||r.replaceData(c,a-c-d,e.slice(c,s-d));const L=r.data,E=t.ownerDocument.getSelection?.()??null,w=E!==null&&E.rangeCount>0&&(E.anchorNode===r||E.focusNode===r)?{anchor:E.anchorNode,anchorOffset:E.anchorOffset,focus:E.focusNode,focusOffset:E.focusOffset}:null;let m=-1,k=-1;for(let h=0;h<L.length&&h<e.length;h++){const p=L.charCodeAt(h),x=e.charCodeAt(h);p!==x&&Ze(p,x)&&(m<0&&(m=h),k=h)}const O=m>=0;if(O&&r.replaceData(m,k-m+1,e.slice(m,k+1)),O&&w!==null&&w.anchor!==null&&w.focus!==null)try{E.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var br=new Set(["html","head","body","frameset"]);function Er(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&br.has(t.localName)}function Sr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!fr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Rt.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Rt.test(r))return!1}return!0}function Ar(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function kr(t){return t===null||typeof t!="object"?!1:Ar(t.__frame_patch,Sr)}function Rr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Tr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Lr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Or(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&ur.includes(r)}var Pr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Mr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function Nr(t){return typeof t=="string"&&Mr.includes(t)?t:"other"}var Cr=Object.freeze({until:null,now:!1}),jr="__claude_hot",Fr="__claude_hot_in",Ir=/^__claude_hot(?:_in)?(?::|$)/,Lt=/^[0-9a-z]{1,32}$/,Qe=t=>t===void 0?jr:"__claude_hot:"+t,Ae=t=>t===void 0?Fr:"__claude_hot_in:"+t;function xr(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&Ir.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Dr(t){let e=null;try{e=B(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Lt.test(e.k)?null:ue(e.g)?{k:e.k,g:e.g}:{k:e.k}}var $n=262144,Hr=3e3,qr=5e3,Ot=/^[a-z0-9._:-]{1,64}$/,Br=["none","hot-restart","hard-reload"],Ur=["asset","doc","added","removed"],Kr=1500,Gr=/^[0-9a-f]{64}$/;function B(t){return t!==null&&typeof t=="object"?t:null}function ue(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Pt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function zr(t){return t===void 0||typeof t=="string"&&Ot.test(t)}function Mt(t){const e=B(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function et(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Pt(e.seq)&&typeof e.handoff=="string"&&Pr.includes(e.handoff)&&zr(e.note)}function Nt(t){const e=B(t);return e!==null&&ue(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||et(e.from))}function $r(t){const e=B(t);return e!==null&&e.kv===1&&ue(e.gen)&&et(e.from)&&Object.hasOwn(e,"data")}function Wr(t){const e=B(t);return e!==null&&e.__frame_hot_snapshot===!0&&ue(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Mt(e.deadline))&&Pt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Vr(t){const e=B(t);return e!==null&&e.__frame_hot_start===!0&&ue(e.gen)&&et(e.from)}function Xr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Ct(t){return B(t)!==null&&!Array.isArray(t)}function Yr(t){const e=B(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Xr(e.ver)&&(e.grant===void 0||Ct(e.grant))&&(e.budgets===void 0||Ct(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||ue(e.brokerGen))}function Jr(t){const e=B(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||ue(e.brokerGen))}function jt(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Ft(t){if(t==null||typeof t=="string")return!0;const e=B(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Zr(t){const e=B(t);return e!==null&&typeof e.path=="string"&&Ur.includes(e.kind)&&Ft(e.from)&&Ft(e.to)}function Qr(t){return t===null?null:Object.freeze(t.filter(Zr))}function en(t){const e=B(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&jt(e.from)&&jt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Br.includes(e.required)&&Mt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Gr.test(e.preflight))}var fe=/^[\w.-]+\.js$/;function tn(t,e,r){return r?"inert":typeof e=="string"&&fe.test(e)?t?[e]:"inert":t?"inert":"framed"}var It=Object.freeze({[Symbol("claude.hot.restart")]:!0});function xt(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=Qe(e?.k),a=Ae(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{xr(r,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);$r(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{r.removeItem(a)}catch{}return c}function Dt(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var rn=/^[^/\\?#]{1,128}$/,Ht=t=>rn.test(t)&&t!=="."&&t!=="..";function qt(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!Ht(r))return null;const s=n.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var De="{}";function ke(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Bt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function Ut(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function nn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),L=new TextEncoder;let E=null,w=null;try{E=history,w=E.replaceState.bind(E)}catch{}const m=(...o)=>{try{console.warn(...o)}catch{}};let k=Dt(),O=null;try{O=sessionStorage}catch{}const h={storage:O,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:k,key:n?.k};let p=n?.k;const x=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(d()),16);let y=e?.data??{},F=ke(e?.from),P=e?.gen??0,D=e!==null,$=!1,Q=!1,X=null,Oe=!1;const Pe=new AbortController;let Me=null,H=null,ve=null,Ke=!1,le=()=>{};const l=new Promise(o=>{le=o});let b=!1,g=!1,C=!1,N,j=null,W=!1,re=!1,Y=!1,Ne=!1,ee=!1,_e=!1;const Ce=o=>{for(const u of[Qe(o),Ae(o)])try{O?.removeItem(u)}catch{}},K=(o,u)=>{try{u!==null&&r.post(o,u)}catch{}},je=()=>ee||=Y&&(H===null||Ne),q=()=>{const o={__frame_hot:!0,ready:H!==null,accept:ve!==null,demand:!0};_e=!ee,_e&&(o.booting=!0),b&&(o.readData=!0),C&&(o.threw=!0),j?.assess&&(o.preflight=!0),K(o,X)};let Fe=!1,Ie=!1,ce=!1,Ge=!1;const ze=()=>{Fe||!Oe||ce||(Fe=!0,K({__frame_reveal_hold:!0},"*"))},ne=()=>new Promise(o=>{let u,f=0;const S=I=>{if(u===void 0)u=I;else if(I!==u||++f>=8){o();return}try{x(S)}catch{o()}};try{x(S)}catch{o()}}),ye=()=>{ce=!0,K({__frame_reveal_ready:!0},"*")},ge=o=>{Ie||(Ie=!0,o.then(u=>{if(u===!1)return;let f=null;try{f=j?.settle?.()??null}catch{}return(f===null?ne():new Promise(S=>{a(S,50),Promise.resolve(f).then(S,S)}).then(ne)).then(ye)}))},$e=()=>{if(Ge||!ce)return;Ge=!0;const o=()=>{try{j?.afterReveal?.()}catch{}};o(),ne().then(()=>{o(),ye()})},i=(o=!1)=>{if(Ke||H===null||!D||!Q)return;Ke=!0;const u=H,f=y;c(()=>{let S;try{S=u(f)}catch(U){throw le(!1),U}let I=!1;try{I=typeof S?.then=="function"}catch{}if(!I){le(!0);return}Promise.resolve(S).then(()=>le(!0),U=>{le(!1),c(()=>{throw U})})}),ge(o?l:r.dcl.then(()=>l))},v=o=>typeof o=="string"&&Ot.test(o)?o:void 0,_=o=>{const u={__frame_hot_restart:!0},f=v(o?.note);f!==void 0&&(u.note=f),o?.required==="hard-reload"&&(u.required="hard-reload"),K(u,X)},R=Object.freeze({get data(){return Q||(g=!0),!D&&!b&&(b=!0,Q&&q()),y},get from(){return F},get gen(){return P},signal:Pe.signal,snapshot(o){typeof o=="function"&&(Me=o)},ready(o){typeof o!="function"||H!==null||(H=o,ze(),q(),$&&K({__frame_hot_ready:!0,gen:P},X),i())},accept(o){typeof o=="function"&&(ve=o,q())},restart(o){const u={note:o?.note,required:o?.required};if(Q){_(u);return}const f=N;N={note:v(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let G=null,J=()=>{};const he=new Promise(o=>{J=o});let xn=null;const rr=()=>xn??=r.dcl.then(()=>{let o=!1;try{o=G!==null&&G.expect()}catch{}if(!o)return;const u=G.maxMs;return new Promise(f=>{he.then(f),a(f,u)})}),nr=()=>{if(!W||re||j===null)return;re=!0;const o=j;rr().then(()=>{try{ce||o.afterStart(Ut(e),!1)}catch{}})},or=o=>{e!==null&&g&&(b=!0),y={},F=null,P=0;try{O?.removeItem(Ae(n?.k))}catch{}e!==null&&!o&&ge(r.dcl.then(()=>H!==null?l:void 0))},Dn=()=>{W=!0,ge(rr().then(()=>H!==null?l:void 0)),nr()};try{addEventListener("error",()=>{C||H!==null||(C=!0,q())})}catch{}const ar=()=>{a(()=>{!ee&&je()&&_e&&q()},0)};try{Y=document.readyState==="complete",Y||addEventListener("load",()=>{Y=!0,ar()},{once:!0})}catch{Y=!0}je(),l.then(()=>{Ne=!0,ar()});let pe=-1,vt,_t,xe=!0,yt=!1,gt,We=null;const wt=o=>{const u=We===null;We=xe&&o[0]!=="withheld"?o:["withheld",o[1],De];let f=o[0];if(xe&&f!=="withheld"){const I={ver:k,handoff:f};vt!==void 0&&(I.seq=vt),_t!==void 0&&(I.note=_t);try{if(O===null)throw new Error("no storage");O.setItem(Qe(p),'{"kv":1,"gen":'+pe+',"from":'+JSON.stringify(I)+(gt!==void 0?',"k":'+JSON.stringify(gt):"")+',"data":'+(f==="ok"?o[2]:De)+"}")}catch{f="unavailable"}}else{f="withheld",Ce(p);try{j?.release?.()}catch{}}const S={__frame_hot_snapshotted:!0,gen:pe,handoff:f,bytes:o[1]};o[3]!==void 0&&(S.errName=o[3]),K(S,X),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&m("claude.hot: snapshot",f,o[3])},we=o=>{try{return Nr(o?.name)}catch{return"other"}},be=(o,u,f=0)=>wt(u===void 0?[o,f,De]:[o,f,De,we(u)]),Hn=o=>{if(o.gen<=pe)return;const u=pe>=0;if(pe=o.gen,vt=o.seq,_t=v(o.note),typeof o.key=="string"&&Lt.test(o.key)&&o.key!==p&&(Ce(p),p=o.key),xe&&=o.handoff!==!1,u){We!==null?wt(We):yt&&K({__frame_hot_held:!0,gen:pe},X);return}Pe.abort();const f=Object.freeze({handoff:xe,timeoutMs:o.timeoutMs,deadline:o.deadline??Cr}),S=Me,I=()=>{if(xe)try{gt=j?.capture()}catch{}if(S===null){be("empty");return}let T=!1;const z=a(()=>{T||(T=!0,be("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>S(f)).then(Ee=>{if(T)return;T=!0,s(z);let oe;try{oe=JSON.stringify(Ee)}catch(bt){be("unclonable",bt);return}if(typeof oe!="string"){be("unclonable");return}let ae=oe.length;try{ae=L.encode(oe).length}catch{}if(ae>262144){be("oversize",void 0,ae);return}wt(["ok",ae,oe])},Ee=>{T||(T=!0,s(z),be("snapshot_error",Ee))})};let U=null;try{U=j?.holdForIme()??null}catch{}if(U===null)I();else{yt=!0,K({__frame_hot_held:!0,gen:pe},X);const T=()=>{yt=!1,I()};U.then(T,T)}},qn=o=>{if(!$||D||H===null||o.gen!==P)return;let u=null;try{u=xt(O,n&&{k:n.k,g:o.gen})}catch{}if(u!==null&&u.gen!==o.gen){u=null;try{O?.removeItem(Ae(n?.k))}catch{}}y=u?.data??{},F=Bt(ke(u?.from??o.from),ke(o.from)),u!==null&&(P=u.gen),D=!0,$=!1;const f=Ut(u);l.then(S=>{try{S&&j?.afterStart(f,!0)}catch{}}),i(!0)};let Ve=0;const Bn=o=>{const u=ve;if(u===null||o.id<=Ve)return;Ve=o.id;const f=j?.assess;if(o.preflight===void 0||f===void 0){sr(o,u);return}let S=!1;const I=z=>{S||(S=!0,s(T),o.id===Ve&&sr(o,u,z))},U=()=>I(f.timeout(o)),T=a(U,Kr+100);f.run(o,window).then(I,U)},sr=(o,u,f)=>{let S,I=!1,U=!1,T,z,Ee=null;const oe=A=>{if(U)return!1;if(T!==void 0&&T!==A)return m(`claude.hot: u.${A}() ignored - u.${T}() was called first`),!1;const te=T===void 0;return T=A,te},ae=A=>{T="restart",m(`claude.hot: ${A} - restarting`)},bt=()=>{if(!oe("adopt")||o.id!==Ve)return;const A=o.to.ver;if(Xe.required!=="none"){ae(`u.adopt() needs required 'none', it is '${Xe.required}'`);return}if(!Ht(A)){ae("u.adopt() cannot address this version");return}if(!k||A===k)return;const te=k,Z=h.entry;let Ye="",St,Se=null,Je;try{Ye=location.href,St=E.state,Se=qt(Ye,te,A),Se!==null&&(w(St,"",Se),location.pathname.startsWith("/_f/"+A+"/")?Se=location.href:Je="navigate event canceled")}catch(kt){Je=we(kt)}if(Je!==void 0){z="adopt_failed",ae(`adopt_failed ${Je}; URL not changed`);return}Se===null?(z="adopt_skipped",m(`claude.hot: adopt_skipped - page already left /_f/${te}/; URL not changed, update still applied`)):z="adopted",k=h.ver=A;try{h.entry=qt(Z,te,A)??Z}catch{}const At=Se;Ee=()=>{if(k===A){if(At!==null)try{if(location.href!==At)m("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(w(St,"",Ye),location.href!==Ye){m("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",m("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(kt){m(`claude.hot: adopt_revert_failed ${we(kt)} - URL still at the new version`);return}k=h.ver=te,h.entry=Z,At===null&&(z=void 0)}}},Xe=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:Qr(o.changed),required:o.required,deadline:o.deadline,adopt:bt,defer(){return oe("defer")&&Xe.deadline.now&&ae("u.defer() past the deadline"),It},restart(A){return oe("restart"),T==="restart"&&!U&&(S??=v(A?.note),I||=A?.required==="hard-reload"),It},...f?.update}),Un=(A,te)=>{U=!0,A==="threw"?(Ee?.(),S??=we(te).toLowerCase()):T===void 0&&m(A==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const Z={__frame_hot_verdict:!0,id:o.id};Z.verdict=A==="threw"||T===void 0||T==="restart"?"restart":T==="adopt"?"applied":"deferred",Z.verdict==="restart"&&(I&&(Z.required="hard-reload"),S!==void 0&&(Z.note=S)),z!==void 0&&(Z.verdict==="applied"||z!=="adopted")&&(Z.adopt=z),K(Object.assign(Z,f?.verdict),X)};let ir=!1;const Et=(A,te)=>ir?!1:(ir=!0,s(Kn),Un(A,te),!0),Kn=a(()=>Et("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>u(Xe)).then(()=>Et("settled"),A=>{!Et("threw",A)&&T==="adopt"&&_({note:we(A).toLowerCase()}),m("claude.hot: accept",we(A))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:R,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:R,boot:h,afterConnect(){Oe=!0,(e!==null||H!==null)&&ze()},onInit(o,u){X=u,Q=!0;const f=Nt(o)?o:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(D=!0,F=Bt(F,ke(f.from)),Dn()):($=f?.phase==="pending",or($),D=!$,P=f?.gen??0,F=ke(f?.from)),q(),_e&&a(()=>{ee||(ee=!0,q())},qr),$&&H!==null&&K({__frame_hot_ready:!0,gen:P},u),N!==void 0&&(_(N),N=void 0),i()},onNoInit(){Q=!0,or(!1),D=!0,i()},onShell(o){return o?.__frame_revealed===!0?($e(),!1):Wr(o)?(Hn(o),!0):Vr(o)?(qn(o),!0):en(o)?(Bn(o),!0):!1},attachExtras(o){j=o,nr(),o.assess&&q()},inSlot:()=>Ae(p),hydration(o,u){G??={expect:o,maxMs:u}},hydrated(){J()},carried(){return D?y:{}},presented:()=>ce}}var Wn="frame_ldx_runtime",on="frame_ldx_build",Vn="script#an-form",an=256;function Kt(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=an&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function tt(t,e,r){try{const n=t[e];if(typeof n!="function")return;t[e]=function(...a){const s=n.apply(this,a);try{r(this)}catch{}return s}}catch{}}var rt;function sn(){if(rt)return rt;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};rt=t;const e=window.HTMLMediaElement?.prototype;e&&(tt(e,"play",a=>{Kt(t.media,a,s=>s.paused),t.onStart?.(a)}),tt(e,"pause",a=>t.onPause?.(a)));const r=window.AudioContext,n=window.AudioNode?.prototype;return r&&n&&tt(n,"connect",a=>{const s=a.context;s instanceof r&&(Kt(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function ln(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function cn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:ln(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(n){const a=s=>{const c=s.source;r(c)&&n(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const c=d=>{r(d.source)&&d.origin===n&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function un(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var fn=500,dn=2e4,hn="data-token-reads",pn="data-frame-refused-watch",mn="data-frame-unsupported",vn=/(?:^|\s)stylesheet(?:\s|$)/i;function _n(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&vn.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function yn(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(pn,"");const a=location.href,s=fetch,c=setTimeout,d={method:"HEAD",cache:"no-store",credentials:"same-origin"},L=h=>h.ok||h.status===304;let E=!1,w=!1;const m=()=>removeEventListener("error",O,!0),k=async h=>{const p=await s(h,d);if(L(p))w=!0;else if(p.status===403){const x=await s(a,d);if(L(x)){const y=(await s(h,d)).status;y===403?(w=!0,document.documentElement.setAttribute(mn,""),r()):y<500&&(w=!0)}else x.status>=400&&x.status<500&&(w=!0)}},O=h=>{if(w||E)return;if(document.documentElement.hasAttribute(hn)){w=!0,m();return}const p=_n(h.target,n);p&&(E=!0,c(()=>{k(p).catch(()=>{}).finally(()=>{E=!1,w&&m()})},fn))};addEventListener("error",O,!0),addEventListener("load",m,{once:!0}),c(m,dn)}var nt="__frame_scroll",gn=150,wn=310,bn=160,En=3e4;function Sn(){let t=0,e=!1,r=!1,n=!1,a=0,s=null;const c=y=>{try{sessionStorage.setItem(nt,JSON.stringify({y}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const y=s;s=null,c(y)},L=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,gn)};try{addEventListener("scroll",L,{passive:!0}),addEventListener("pagehide",d)}catch{}const E=()=>{let y;try{y=sessionStorage.getItem(nt)}catch{return null}if(y===null)return null;let F;try{F=JSON.parse(y)}catch{F=null}const P=F?.y;if(!(typeof P=="number"&&Number.isFinite(P)&&P>=0)){try{sessionStorage.removeItem(nt)}catch{}return null}return P};let w=!1;const m=y=>{try{const F=scrollY;scrollTo({top:y,left:0,behavior:"instant"}),a=y,n=!0,clearTimeout(t),s=null,c(y);const P=scrollY;P!==F&&(e=!0),P!==y&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===P){const D=E();m(D!==null?D:a)}}catch{}},{once:!0}))}catch{}},k=()=>{try{return!!location.hash}catch{return!0}};let O=!1;const h=()=>{try{if(O||innerWidth>wn||innerHeight>bn)return;O=!0;const y=Date.now(),F=()=>{try{removeEventListener("resize",F)}catch{}if(Date.now()-y>En||r||k())return;const P=E();m(P!==null?P:a)};addEventListener("resize",F)}catch{}};let p=!1,x=!1;return{restore(){if(p||(p=!0,k()))return;const y=E();y!==null&&(m(y),h())},promoted(){if(x||(x=!0,k()))return;const y=E();y!==null?(m(y),h()):n&&m(a)}}}function An(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:L=>L})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(L=>L?.bootTopLevel?L.bootTopLevel(d,n):n.settle()).catch(()=>n.settle())}var Xn="modulepreload",Yn=function(t){return"/"+t},Jn={},kn=function(e,r,n){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},Rn=window===top,Gt=Object.getOwnPropertyDescriptor(window,"claude"),He=tn(Rn,window.__FRAME_PREAMBLE?.topLevel,Gt?.writable===!1),ot=typeof He=="object"&&He[0],M=ot?un():cn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&He==="framed")try{M.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var zt=1e4,Tn=2e3,at=2e3,st=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function $t(t){for(const e of st)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Re=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Te=window.__FRAME_PREAMBLE?.transforms,it=window.__FRAME_PREAMBLE?.comments,lt=window.__FRAME_PREAMBLE?.translate,de=window.__FRAME_PREAMBLE?.ldx,ct=lr(window.__FRAME_PREAMBLE?.cred);function Wt(t){return kn(()=>import("/_runtime/"+t),void 0)}var Le=new Set,Vt=setTimeout,Ln=fetch,On=AbortController,Pn=800+800*Math.random(),Mn=3e3,qe=null,Xt=new Map;function Nn(t,e){let r=Xt.get(t);return r||Xt.set(t,r=Cn(t,e)),r}function Cn(t,e){if(qe?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new On;let n=!1;return Vt(()=>{n=!0,r.abort()},Mn),Ln("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":qe?.has(t)?"csp":"net")}function se(t){if(!qe){const e=qe=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Wt(t).catch(()=>new Promise(e=>Vt(e,Pn)).then(()=>Wt(t+"?r=1")).then(e=>(e!==void 0&&Le.add(t),e)))}function Yt(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:mt,hooks:Be,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var me=null,V=null;function Jt(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var ut=!1,Be={editBefore:null,edit:null};function jn(t,e,r=!1){const n=[];let a;if(r)try{Be.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!hr(d)||pr(c,d))){a=s.target;break}if(s.text!==void 0&&(!yr(c)||Er(c))){a=s.target;break}for(const[d,L]of Object.entries(s.attrsSet??{}))if(!Qt(c,d)){try{c.setAttribute(d,L)}catch{}Zt(c,d,L)}for(const d of s.attrsRemoved??[])Qt(c,d)||(c.removeAttribute(d),Zt(c,d,null));typeof s.text=="string"&&wr(c,s.text),n.push(s.target)}if(r)try{Be.edit?.(t.seq,n,a)}catch{}if(a!==void 0){M.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function Zt(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function Qt(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function er(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,ut=!0):ut&&(delete e.dataset.theme,e.style.colorScheme="",ut=!1)}var ie=new Map,ft=null;function dt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function Ue(t,e){t.nulled=!0,t.ver=e,t.r(null)}function ht(t,e){for(const[r,n]of ie)n.done||(e&&n.asked?e(r,n):Ue(n,t))}function Fn(){for(const t of ie.values())if(t.asked&&!t.done)return!0;return!1}var In=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),pt=!1,mt=(t,e)=>{let r=ie.get(t);if(r?.nulled&&pt)r=dt(),ie.set(t,r);else if(!r||r.done){r?.nulled&&V&&M.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},V);return}const n=typeof e=="function"?Object.setPrototypeOf(e,In):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function tr(){const t=Gt?.value??{};Jt(window,"claude",t);for(const e of Object.keys(Re)){if(t[e]!==void 0){Jt(t,e,t[e]);continue}ie.set(e,dt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Re,r))return Promise.resolve(null);let n=ie.get(r);return n?(ft&&(n.nulled||n.want!==void 0)&&(n=ft(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(He==="framed"){let t;const e=Te&&fe.test(Te)?se(Te).catch(l=>{t={f:Te,e:l}}):Promise.resolve(void 0),r=l=>{if(l.type==="auxclick"&&l.button!==1)return;const b=l.target,g=b&&b.closest?b.closest("a[href],area[href]"):null;if(!g)return;const C=g.getAttribute("href");if(!C)return;let N;try{N=new URL(C,document.baseURI)}catch{return}if((N.protocol==="http:"||N.protocol==="https:")&&N.origin!==location.origin){l.preventDefault();const j=(g.getAttribute("target")??"").toLowerCase(),W=l.type==="auxclick"||l.metaKey||l.ctrlKey||l.shiftKey||l.altKey||!["","_self","_top","_parent"].includes(j);M.post({__frame_nav:!0,url:N.href,newTab:W},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=l=>{l.isTrusted&&(n.pointer=!0)},s=l=>{l.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const c={cb:null};addEventListener("keydown",l=>c.cb?.(l),!0);const d={cb:null};addEventListener("keydown",l=>d.cb?.(l));const L=sn();e.then(l=>l?.installEscapeForward?.(c,b=>{V&&M.post(b,V)})),e.then(l=>{try{l?.installFocusKeep?.()}catch{}}),e.then(l=>{if(!l?.wireNav)return;const b=M.port("*");l.wireNav(b),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),l.wireEngagement?.(n,b,L)});let E=null;try{E=Sn()}catch{}const w=document.readyState==="loading"?new Promise(l=>document.addEventListener("DOMContentLoaded",()=>l(),{once:!0})):Promise.resolve();let m=null,k=null;try{k=Dr(window.name),m=xt(null,k)}catch{}const O=tr();let h=null;try{h=nn(O,m,{post:(l,b)=>M.post(l,b),dcl:w},k)}catch{}e.then(l=>{try{h&&l?.installHotExtras?.(h)}catch{}});let p=null;const x=()=>Array.isArray(p?.flags)&&p.flags.includes("frame_ldx_runtime")&&!!de&&fe.test(de)&&document.querySelector("script#an-form")!==null;try{h?.hydration(x,Hr)}catch{}let y=null,F=0;const P=M.on((l,b,g,C)=>{$t(b)&&Rr(l)&&(C(),p=l.__frame_init,V=b,P(),clearTimeout(F),y?.())});if(ct)for(const l of st)try{l.endsWith(":*")||M.post({__frame_cred:ct},l)}catch{}M.post({__frame_connect:!0},"*");try{h?.afterConnect()}catch{}const D=setTimeout,$=clearTimeout;let Q=()=>NaN,X=()=>[];try{Q=performance.now.bind(performance),X=performance.getEntriesByType.bind(performance)}catch{}let Oe=0;const Pe=()=>{try{M.post({__frame_alive:!0},"*")}catch{}Oe=D(Pe,Tn)},Me=()=>$(Oe);Pe(),addEventListener("load",Me,{once:!0});const H=new Promise(l=>{y=l,F=setTimeout(()=>{P(),l()},zt)}),ve=new WeakSet;addEventListener("error",l=>{l.target&&ve.add(l.target)},!0);try{yn(Dt(),ct,()=>{e.then(l=>{try{l?.drawRefusedNotice?.()}catch{}})})}catch{}const Ke=()=>{let l=[];try{l=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(g=>!g.sheet&&!g.disabled&&!ve.has(g)&&g.getAttribute("href")&&URL.canParse(g.href)&&(!g.media||matchMedia(g.media).matches))}catch{}let b=l.length;return b===0?Promise.resolve():new Promise(g=>{try{const C=at-Q(),N=D(g,C>0?C<at?C:at:0),j=()=>{--b===0&&($(N),g())};for(const W of l)W.addEventListener("load",j,{once:!0}),W.addEventListener("error",j,{once:!0})}catch{g()}})};w.then(()=>{try{E?.restore()}catch{}}),Promise.all([H,w,e]).then(([,,l])=>{if(p?.hostOverlays!==!0||!V)return;let b=!1;try{b=l?.declaresCover?.()===!0}catch{}M.post({__frame_layout:{cover:b}},V)});const le={cb:null};M.on((l,b)=>{if($t(b)&&Tr(l)){try{E?.promoted()}catch{}le.cb?.()}}),H.then(async()=>{if(!p||!V){ht();try{h?.onNoInit()}catch{}return}if(er(p.theme),p.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,L)),p.hostKeys!==void 0){const i=V,v=p.hostKeys;e.then(_=>_?.installHostKeyForward?.(d,v,R=>M.post(R,i)))}try{h?.onInit(p.hot,V)}catch{}let l;const b=()=>{try{!l&&de&&x()&&(l=se(de),l.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};b(),w.then(b);const g=V,C=M.port(g),N=(i,v)=>M.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:v}},g),j=(i,v,_)=>{new Promise(R=>R(Nn(v,_))).then(R=>N(i,R),()=>N(i))},W=i=>M.post({__frame_cap_recovered:{cap:i}},g);let re=p.brokerGen;const Y=()=>h?.boot.ver??"",Ne=Y(),ee=(i,v)=>{const _=Y();$(v.t),v.want=_,v.t=D(()=>{v.done||Ue(v,_)},zt),M.post({__frame_cap_want:!0,cap:i,ver:_},g)},_e=(i,v)=>{const _=ie.get(i.cap),R=Re[i.cap];if(!v||!_||_.done||_.want!==i.ver||!fe.test(R))return;if($(_.t),_.want=void 0,re=i.brokerGen??re,i.ver!==Y()){ee(i.cap,_);return}if(!i.grant||i.cap==="network"){Ue(_,i.ver);return}const G=me,J=me={...G,capabilities:{...G.capabilities,[i.cap]:i.grant},capBudgets:{...G.capBudgets,[i.cap]:{...G.capBudgets[i.cap],...i.budgets}}};se(R).then(he=>{Le.has(R)&&W(i.cap),J.brokerGen=re,pt=!0;try{he?.install?.(J)}catch{N(i.cap,"install")}finally{pt=!1}},he=>j(i.cap,R,he)).then(()=>{_.done||Ue(_,i.ver)})};let Ce=!1,K=!1;M.on((i,v,_)=>{if(v!==g)return;try{if(h?.onShell(i))return}catch{}if(Or(i)&&er(i.__frame_theme.theme),Yr(i)&&_e(i,_),_&&Jr(i)&&(re=i.brokerGen??re),Lr(i)){const J=i.__frame_host_visible.visible;e.then(he=>he?.applyHostVisible?.(J,L))}kr(i)&&jn(i.__frame_patch,g,_);const R=i?.__fc_mode;R&&typeof R=="object"&&!Ce&&it&&fe.test(it)&&(Ce=!0,se(it).then(J=>J.install?.(g,R.on===!0,C)).catch(()=>{}));const G=i?.__ft_cmd;G&&typeof G=="object"&&!K&&lt&&fe.test(lt)&&(K=!0,se(lt).then(J=>J.install?.(g,G,C)).catch(()=>{}))});const je=Object.keys(p.capabilities??{}).filter(i=>Object.hasOwn(Re,i)).map(i=>[i,Re[i]]).filter(i=>typeof i[1]=="string"&&fe.test(i[1])),q=g;let Fe=()=>{};const Ie=new Promise(i=>{Fe=i}),ce=m!==null||Nt(p.hot)||p.hostVisible===!1||p.hostOverlays===!0,Ge=w.then(()=>ce?Ie:new Promise(i=>D(i,0))).then(Ke).then(()=>{let i=!0;try{i=ce||Fn()}catch{}return i?Ie:void 0}).then(()=>{Me();const i=cr(X,Q);M.post(i?{__frame_ready:!0,nav:i}:{__frame_ready:!0},q),e.then(v=>{v?.installSizeReporter?.(q,le,C),v?.installPaintReporter?.(C)})}),ze=await Promise.allSettled(je.map(([,i])=>se(i))),ne=await e;if(ne?.buildBoot||(t?j("_transforms",t.f,t.e):N("_transforms")),ne?.buildBoot)try{me=ne.buildBoot(p,ne.TRANSFORMS??{},{shellOrigin:q,mount:mt,hooks:Be,shell:C},i=>M.post({__frame_cap_telemetry:i},q))}catch{N("_transforms","install"),me=Yt(p,q,C)}else me=Yt(p,q,C);ne?.buildBoot&&Le.has(Te??"")&&W("_transforms");const ye=me;ye.brokerGen=re,ze.forEach((i,v)=>{const[_,R]=je[v];if(i.status!=="fulfilled"){j(_,R,i.reason);return}Le.has(R)&&W(_);try{i.value?.install?.(ye)}catch{N(_,"install")}});const ge=p.capWants===!0;ge&&(ft=(i,v)=>{const _=Y();if(!_)return v;if(!v.nulled)return v.want!==_&&ee(i,v),v;if(_===v.ver)return v;const R=dt();return ie.set(i,R),ee(i,R),R}),ht(Ne,ge&&Y()!==Ne?ee:void 0),Fe(),await Ge;let $e=!1;try{$e=x()}catch{}de&&$e?(l??se(de)).then(i=>i?.boot?.({shellOrigin:g,build:ye.flags.has(on),hot:h?.hot??null,carried:h?.carried(),presented:()=>h?.presented()??!0})).catch(()=>!1).then(i=>{h?.hydrated(),i!==!0?N("_ldx"):Le.has(de)&&W("_ldx")}):h?.hydrated()})}else ot&&(tr(),An(ot,st,se,{settle:ht,mount:mt}))})();</script><!-- /frame-runtime --><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>Jobescape — итоговое решение UX/UI</title>
+
+<style>
+:root{
+  --paper:#FBFAF7; --paper-2:#F2F0EB; --paper-3:#E9E6DF;
+  --ink:#15181D; --ink-2:#4B525B; --ink-3:#7A818B;
+  --rule:#DCD8D0; --rule-soft:#E8E5DE;
+  --mark:#0A5CFF; --flag:#C2410C; --pass:#1B7F3B; --fail:#C5221F; --warn:#9A5B00; --prem:#6B4FD8;
+  --shadow:0 1px 2px rgba(20,24,30,.07), 0 10px 28px -16px rgba(20,24,30,.25);
+  --serif:Charter,"Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#14161A;--paper-2:#1B1E24;--paper-3:#232830;--ink:#F1EFEA;--ink-2:#A7AEB8;--ink-3:#7C848F;
+  --rule:#2E333B;--rule-soft:#252A31;--mark:#6A9CFF;--flag:#FF8A45;--pass:#4FC97A;--fail:#FF7A72;--warn:#E0A33C;--prem:#A78BFA;
+  --shadow:0 1px 2px rgba(0,0,0,.45),0 12px 32px -18px rgba(0,0,0,.8);}}
+:root[data-theme="dark"]{
+  --paper:#14161A;--paper-2:#1B1E24;--paper-3:#232830;--ink:#F1EFEA;--ink-2:#A7AEB8;--ink-3:#7C848F;
+  --rule:#2E333B;--rule-soft:#252A31;--mark:#6A9CFF;--flag:#FF8A45;--pass:#4FC97A;--fail:#FF7A72;--warn:#E0A33C;--prem:#A78BFA;
+  --shadow:0 1px 2px rgba(0,0,0,.45),0 12px 32px -18px rgba(0,0,0,.8);}
+:root[data-theme="light"]{
+  --paper:#FBFAF7;--paper-2:#F2F0EB;--paper-3:#E9E6DF;--ink:#15181D;--ink-2:#4B525B;--ink-3:#7A818B;
+  --rule:#DCD8D0;--rule-soft:#E8E5DE;--mark:#0A5CFF;--flag:#C2410C;--pass:#1B7F3B;--fail:#C5221F;--warn:#9A5B00;--prem:#6B4FD8;
+  --shadow:0 1px 2px rgba(20,24,30,.07),0 10px 28px -16px rgba(20,24,30,.25);}
+
+*{box-sizing:border-box;}
+body{background:var(--paper); color:var(--ink); font-family:var(--serif);
+  font-size:17px; line-height:1.58; -webkit-font-smoothing:antialiased; padding:0 0 5rem;}
+:focus-visible{outline:2px solid var(--mark); outline-offset:2px; border-radius:3px;}
+.wrap{max-width:82rem; margin:0 auto; padding:0 1.25rem;}
+img{max-width:100%; height:auto; display:block;}
+
+.top{padding:3rem 0 0;}
+.brow{font-family:var(--sans); font-size:.7rem; font-weight:700; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--ink-3); display:flex; flex-wrap:wrap; gap:.5rem 1.1rem;
+  align-items:center; padding-bottom:1.1rem; border-bottom:2px solid var(--ink);}
+.brow .d{width:5px;height:5px;border-radius:50%;background:var(--mark);flex:none;}
+h1{font-size:clamp(2rem,4.8vw,3.2rem); line-height:1.04; font-weight:700; letter-spacing:-.03em;
+  margin:1.5rem 0 .9rem; max-width:20ch; text-wrap:balance;}
+.sub{font-size:1.04rem; color:var(--ink-2); max-width:62ch; margin:0 0 .8rem;}
+.sub b{color:var(--ink);}
+.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(8rem,1fr)); gap:1px;
+  background:var(--rule); border:1px solid var(--rule); margin:2rem 0 0;}
+.tiles div{background:var(--paper); padding:.8rem .9rem;}
+.tiles dt{font-family:var(--sans); font-size:.64rem; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-3); margin-bottom:.2rem;}
+.tiles dd{margin:0; font-size:1.35rem; font-weight:700; line-height:1.1; font-variant-numeric:tabular-nums;}
+
+.snav{position:sticky; top:0; z-index:30; background:var(--paper); border-bottom:1px solid var(--rule);
+  margin-top:2rem; padding:.65rem 0; display:flex; flex-wrap:wrap; gap:.35rem;}
+.snav a{font-family:var(--sans); font-size:.75rem; font-weight:700; letter-spacing:.05em;
+  text-decoration:none; color:var(--ink-2); padding:.32rem .7rem; border:1px solid var(--rule);
+  border-radius:99px; background:var(--paper);}
+.snav a:hover{color:var(--ink); border-color:var(--ink-3);}
+.snav a .n{color:var(--ink-3); font-variant-numeric:tabular-nums;}
+
+section.blk{margin-top:3.5rem; scroll-margin-top:4rem;}
+.hd{display:flex; align-items:baseline; gap:.9rem; border-bottom:2px solid var(--ink);
+  padding-bottom:.5rem; margin-bottom:1.25rem;}
+.hd .n{font-size:1.5rem; font-weight:700; color:var(--ink-3); font-variant-numeric:tabular-nums; line-height:1;}
+.hd h2{font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.1; font-weight:700; letter-spacing:-.022em; margin:0;}
+h3{font-family:var(--sans); font-size:.72rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--ink-3); margin:2rem 0 .7rem;}
+p{margin:0 0 .8rem; max-width:66ch;}
+.line{font-size:.98rem; color:var(--ink-2); max-width:66ch; margin:0 0 1rem;}
+code{font-family:var(--mono); font-size:.85em; background:var(--paper-2); padding:.1em .34em;
+  border-radius:3px; border:1px solid var(--rule-soft);}
+
+.hyp{border:2px solid var(--ink); background:var(--paper-2); padding:1.05rem 1.2rem; margin:0 0 1.4rem;}
+.hyp .tg{font-family:var(--sans); font-size:.64rem; font-weight:700; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--mark); display:block; margin-bottom:.4rem;}
+.hyp p{font-size:1.06rem; line-height:1.48; margin:0; max-width:66ch;}
+.hyp p code{background:transparent; border:0; padding:0; font-size:.94em; font-weight:600;}
+.hyp .eff{margin-top:.7rem; padding-top:.65rem; border-top:1px solid var(--rule);
+  font-size:.92rem; line-height:1.45; color:var(--ink-2); max-width:66ch;}
+.hyp .eff b{display:block; font-family:var(--sans); font-size:.62rem; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); margin-bottom:.15rem;}
+
+.args{display:grid; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr)); gap:1px;
+  background:var(--rule); border:1px solid var(--rule); margin:0 0 1.4rem;}
+.args > div{background:var(--paper); padding:.9rem 1rem 1rem; display:flex; flex-direction:column;}
+.args h4{font-family:var(--sans); font-size:.82rem; font-weight:700; margin:0 0 .35rem; color:var(--ink);
+  display:flex; gap:.5rem; align-items:baseline;}
+.args h4 i{font-style:normal; color:var(--ink-3); font-size:.7rem; font-variant-numeric:tabular-nums; flex:none;}
+.args p{font-size:.9rem; line-height:1.45; margin:0; color:var(--ink-2); max-width:none;}
+.args .src{align-self:flex-start; margin-top:.6rem; font-family:var(--sans); font-size:.6rem;
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--mark);
+  border:1px solid var(--rule); border-radius:99px; padding:.16rem .5rem;}
+
+.sc{overflow-x:auto; border:1px solid var(--rule); background:var(--paper); margin:0 0 1.2rem;}
+table{border-collapse:collapse; width:100%; min-width:36rem; font-size:.9rem;}
+th{font-family:var(--sans); font-size:.63rem; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--ink-3); text-align:left; padding:.62rem .85rem; border-bottom:1px solid var(--rule);
+  background:var(--paper-2); white-space:nowrap;}
+td{padding:.6rem .85rem; border-bottom:1px solid var(--rule-soft); vertical-align:top; line-height:1.4;}
+tr:last-child td{border-bottom:0;}
+td.n,th.n{font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap;}
+.pill{display:inline-block; font-family:var(--sans); font-size:.6rem; font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; padding:.16rem .4rem; border-radius:3px; color:#fff; line-height:1.4; white-space:nowrap;}
+.pill.p{background:var(--pass);} .pill.f{background:var(--fail);} .pill.w{background:var(--warn);}
+.pill.g{background:var(--paper-3); color:var(--ink-2);} .pill.m{background:var(--mark);}
+
+.rl{list-style:none; margin:0 0 1.2rem; padding:0; border:1px solid var(--rule); background:var(--paper);}
+.rl li{display:grid; grid-template-columns:minmax(0,1fr); gap:.3rem; padding:.62rem .85rem;
+  border-bottom:1px solid var(--rule-soft); font-size:.94rem; line-height:1.45;}
+@media (min-width:62rem){ .rl li{grid-template-columns:8.5rem minmax(0,1.05fr) minmax(0,1fr); gap:1.4rem; align-items:baseline;} }
+.rl li:last-child{border-bottom:0;}
+.rl b{font-family:var(--sans); font-size:.78rem; font-weight:700; color:var(--ink);}
+.rl span{color:var(--ink-2);}
+.rl span em{font-style:normal; color:var(--ink); font-weight:600;}
+.rl .why{color:var(--ink-3); font-size:.88rem; line-height:1.42;}
+.rl .why::before{content:"Почему · "; font-family:var(--sans); font-size:.6rem; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--mark);}
+.rl li.hdr{display:none;}
+@media (min-width:62rem){
+  .rl li.hdr{display:grid; background:var(--paper-2); font-family:var(--sans); font-size:.6rem;
+    font-weight:700; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3);}
+  .rl li.hdr b, .rl li.hdr span{color:var(--ink-3); font-size:.6rem; letter-spacing:.11em;}
+  .rl .why::before{content:none;}
+}
+
+.sw{display:grid; grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr)); gap:1px;
+  background:var(--rule); border:1px solid var(--rule); margin:0 0 1.2rem;}
+.sw > div{background:var(--paper);}
+.sw .f{height:3.6rem; display:flex; align-items:flex-end; padding:.4rem .5rem;}
+.sw .f span{font-family:var(--sans); font-size:.68rem; font-weight:700;}
+.sw .i{padding:.5rem .6rem .65rem;}
+.sw .r{font-family:var(--sans); font-size:.6rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);}
+.sw .h{font-family:var(--mono); font-size:.76rem; font-weight:600; margin:.12rem 0 .22rem;}
+.sw .u{font-size:.76rem; line-height:1.3; color:var(--ink-2);}
+
+/* ─── живые состояния маскота ─── */
+.esco{display:grid; grid-template-columns:repeat(auto-fill,minmax(10rem,1fr)); gap:1px;
+  background:var(--rule); border:1px solid var(--rule); margin:0 0 1.4rem;}
+.esco > div{background:var(--paper); padding:1.1rem .8rem 1.1rem; text-align:center;}
+.esco .stage{height:104px; display:grid; place-items:center; margin-bottom:.7rem;}
+.esco svg{width:64px; height:64px; overflow:visible;}
+.esco .nm{font-family:var(--mono); font-size:.78rem; font-weight:600; color:var(--ink);}
+.esco .ds{font-size:.8rem; line-height:1.35; color:var(--ink-2); margin-top:.2rem;}
+.esco .tm{font-family:var(--sans); font-size:.58rem; font-weight:700; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--ink-3); margin-top:.45rem; display:block;}
+
+@keyframes e-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes e-blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+@keyframes e-lean{0%,100%{transform:rotate(-12deg) translateX(0)}50%{transform:rotate(-17deg) translateX(-3px)}}
+@keyframes e-jab{0%,100%{transform:translateX(0);opacity:.85}50%{transform:translateX(7px);opacity:1}}
+@keyframes e-bounce{0%,100%{transform:translateY(0) scale(1)}
+  30%{transform:translateY(-14px) scale(1.06)}45%{transform:translateY(-14px) scale(1.06)}
+  70%{transform:translateY(2px) scale(.96)}}
+@keyframes e-confetti{0%{transform:translateY(6px) scale(.4);opacity:0}
+  25%{opacity:1}100%{transform:translateY(-26px) scale(1);opacity:0}}
+@keyframes e-sway{0%,100%{transform:translateX(0) rotate(0)}50%{transform:translateX(3px) rotate(3deg)}}
+@keyframes e-dot{0%,100%{opacity:.25;transform:scale(.7)}40%{opacity:1;transform:scale(1)}}
+@keyframes e-sink{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(5px) scale(.97)}}
+@keyframes e-nod{0%,100%{transform:rotate(0)}30%{transform:rotate(-5deg)}60%{transform:rotate(3deg)}}
+
+.a-float{animation:e-float 3s ease-in-out infinite; transform-origin:50% 50%;}
+.a-eye{animation:e-blink 4.4s ease-in-out infinite; transform-origin:50% 50%;}
+.a-lean{animation:e-lean 1.8s ease-in-out infinite; transform-origin:50% 50%;}
+.a-jab{animation:e-jab 1.8s ease-in-out infinite;}
+.a-bounce{animation:e-bounce 1.9s cubic-bezier(.34,1.56,.64,1) infinite; transform-origin:50% 90%;}
+.a-c1{animation:e-confetti 1.9s ease-out infinite;}
+.a-c2{animation:e-confetti 1.9s ease-out .35s infinite;}
+.a-c3{animation:e-confetti 1.9s ease-out .7s infinite;}
+.a-sway{animation:e-sway 2.2s ease-in-out infinite; transform-origin:50% 80%;}
+.a-d1{animation:e-dot 1.3s ease-in-out infinite;}
+.a-d2{animation:e-dot 1.3s ease-in-out .18s infinite;}
+.a-d3{animation:e-dot 1.3s ease-in-out .36s infinite;}
+.a-sink{animation:e-sink 3.4s ease-in-out infinite; transform-origin:50% 90%;}
+.a-nod{animation:e-nod 2.6s ease-in-out infinite; transform-origin:50% 75%;}
+@media (prefers-reduced-motion:reduce){
+  .a-float,.a-eye,.a-lean,.a-jab,.a-bounce,.a-c1,.a-c2,.a-c3,.a-sway,
+  .a-d1,.a-d2,.a-d3,.a-sink,.a-nod{animation:none!important;}
+}
+
+.plate{margin:0 0 1.4rem; border:1px solid var(--rule); background:var(--paper); overflow:hidden;}
+.plate img{border-bottom:1px solid var(--rule); width:100%;}
+.plate figcaption{padding:.7rem .9rem; font-size:.88rem; line-height:1.45; color:var(--ink-2);}
+.plate figcaption b{color:var(--ink); font-weight:700;}
+
+.spec{border:1px solid var(--rule); background:var(--paper); margin:0 0 1.2rem;}
+.spec .r{display:grid; grid-template-columns:7.5rem minmax(0,1fr); gap:1.1rem; padding:.85rem 1rem;
+  border-bottom:1px solid var(--rule-soft); align-items:baseline;}
+.spec .r:last-child{border-bottom:0;}
+.spec .l{font-family:var(--sans); font-size:.62rem; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-3); line-height:1.5;}
+.spec .l b{display:block; font-family:var(--mono); font-size:.72rem; letter-spacing:0;
+  text-transform:none; color:var(--ink-2);}
+.spec .s{font-family:var(--sans); min-width:0; overflow-wrap:break-word;}
+.t40{font-size:40px;line-height:1.15;font-weight:700;letter-spacing:-.025em;}
+.t32{font-size:32px;line-height:1.2;font-weight:700;letter-spacing:-.02em;}
+.t24{font-size:24px;line-height:1.25;font-weight:600;letter-spacing:-.012em;}
+.t20{font-size:20px;line-height:1.3;font-weight:600;}
+.t17{font-size:17px;line-height:1.55;}
+.t15{font-size:15px;line-height:1.4;font-weight:500;color:var(--ink-2);}
+.tsr{font-family:var(--serif);font-size:19px;line-height:1.6;}
+
+/* ─── галерея экранов ─── */
+.screen{margin-top:2.75rem; padding-top:1.6rem; border-top:1px solid var(--rule);}
+.screen .sh{display:flex; align-items:baseline; gap:.65rem; margin:0 0 1rem; flex-wrap:wrap;}
+.screen .sh .num{font-size:1.2rem; font-weight:700; color:var(--ink-3); line-height:1;
+  font-variant-numeric:tabular-nums; flex:none;}
+.screen .sh h4{font-family:var(--sans); font-size:1.02rem; font-weight:700; margin:0;
+  letter-spacing:-.012em; color:var(--ink); text-transform:none;}
+.screen .sh .tag{font-family:var(--sans); font-size:.58rem; font-weight:700; letter-spacing:.1em;
+  text-transform:uppercase; background:var(--mark); color:#fff; padding:.16rem .42rem; border-radius:3px;}
+.pair{display:grid; grid-template-columns:minmax(0,1fr); gap:1.4rem;}
+@media (min-width:64rem){ .pair{grid-template-columns:minmax(0,1fr) minmax(0,1.85fr); gap:1.6rem; align-items:start;} }
+.shot{min-width:0;}
+.shot .plat{font-family:var(--sans); font-size:.6rem; font-weight:700; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--ink-3); margin:0 0 .4rem;}
+.shot img{border:1px solid var(--rule); border-radius:8px; box-shadow:var(--shadow); background:#fff;}
+.screen ul.ann{list-style:none; margin:1rem 0 0; padding:0; font-size:.88rem; line-height:1.45;}
+.screen ul.ann li{display:flex; gap:.5rem; margin-bottom:.35rem; color:var(--ink-2); max-width:78ch;}
+.screen ul.ann li::before{content:"→"; color:var(--mark); font-weight:700; flex:none;}
+
+.grp{margin-top:3rem; padding:1rem 1.15rem; background:var(--paper-2); border:1px solid var(--rule);}
+.grp .gl{font-family:var(--sans); font-size:.64rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--mark); display:block; margin-bottom:.3rem;}
+.grp h3{font-family:var(--serif); font-size:1.5rem; font-weight:700; letter-spacing:-.02em;
+  text-transform:none; color:var(--ink); margin:0 0 .4rem;}
+.grp p{margin:0; font-size:.95rem; line-height:1.5; color:var(--ink-2); max-width:70ch;}
+.grp p + p{margin-top:.5rem;}
+.grp .path{font-family:var(--mono); font-size:.82rem; color:var(--ink); margin-top:.6rem;
+  line-height:1.9; display:block;}
+.grp .path b{background:var(--paper); border:1px solid var(--rule); border-radius:4px;
+  padding:.12rem .4rem; font-weight:600; white-space:nowrap;}
+.grp .path i{font-style:normal; color:var(--mark); font-weight:700; padding:0 .2rem;}
+
+.tr{border:1px solid var(--rule); background:var(--paper); padding:.85rem 1rem; display:grid;
+  grid-template-columns:minmax(0,1fr); gap:.4rem; margin-bottom:1px;}
+@media (min-width:46rem){ .tr{grid-template-columns:6.5rem minmax(0,1fr) 6rem; gap:1.3rem; align-items:start;} }
+.tr .tn{font-family:var(--sans); font-weight:700; font-size:.8rem;}
+.tr .tn small{display:block; font-weight:600; color:var(--ink-3); font-size:.66rem;
+  letter-spacing:.07em; text-transform:uppercase; margin-top:.1rem;}
+.tr .tw{font-family:var(--mono); font-size:.78rem; color:var(--ink-2); font-variant-numeric:tabular-nums;}
+.tr ul{margin:0; padding-left:1rem; font-size:.9rem; line-height:1.45;}
+.tr li{margin-bottom:.22rem;}
+
+.final{border:2px solid var(--ink); background:var(--paper-2); padding:1.25rem 1.3rem; margin-top:2rem;}
+.final p{margin:0; font-size:1.04rem; line-height:1.5; max-width:62ch;}
+.final p+p{margin-top:.6rem;}
+
+footer{margin-top:4rem; padding-top:1.1rem; border-top:2px solid var(--ink);
+  font-family:var(--sans); font-size:.76rem; color:var(--ink-3);
+  display:flex; flex-wrap:wrap; gap:.5rem 1.5rem; justify-content:space-between;}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="brow"><span class="d"></span><span>Jobescape · итоговое решение</span>
+    <span>UX / UI</span><span>US · CA · UK</span><span>ЦА 45+</span></div>
+  <h1>Типографика, цвет, маскот, расположение</h1>
+  <p class="sub">Что меняем в продукте и почему. Каждый раздел устроен одинаково:
+    сначала <b>гипотеза</b> — что предлагаем. Потом <b>аргументы</b> — почему это сработает.
+    Потом <b>список правок</b> с объяснением к каждой. В конце — <b>все экраны продукта</b>
+    в обеих версиях.</p>
+  <dl class="tiles">
+    <div><dt>Экранов</dt><dd>17</dd></div>
+    <div><dt>Макетов</dt><dd>34</dd></div>
+    <div><dt>Токенов цвета</dt><dd>9</dd></div>
+    <div><dt>Состояний маскота</dt><dd>6</dd></div>
+    <div><dt>Аргументов</dt><dd>32</dd></div>
+  </dl>
+</header>
+
+<nav class="snav">
+  <a href="#t"><span class="n">01</span> Типографика</a>
+  <a href="#c"><span class="n">02</span> Цвета</a>
+  <a href="#m"><span class="n">03</span> Маскот</a>
+  <a href="#mk"><span class="n">04</span> Ментор</a>
+  <a href="#ia"><span class="n">05</span> Архитектура</a>
+  <a href="#s"><span class="n">06</span> Все экраны</a>
+  <a href="#nv"><span class="n">07</span> Навигатор</a>
+</nav>
+
+<!-- ═══════════ 01 ТИПОГРАФИКА ═══════════ -->
+<section class="blk" id="t">
+  <div class="hd"><span class="n">01</span><h2>Типографика</h2></div>
+
+  <div class="hyp">
+    <span class="tg">Гипотеза</span>
+    <p>Берём два шрифта вместо одного. <b>Inter</b> — для кнопок, меню и карточек.
+      <b>Source Serif 4</b> — для текста урока. Основной текст поднимаем с 15 до <b>17 px</b>.
+      Заголовки отличаем <b>размером, а не жирностью</b>. Шрифта меньше 15 px в продукте
+      не остаётся. Кнопку «увеличить шрифт» достаём из настроек и вешаем на экран урока.</p>
+    <div class="eff"><b>Что должно вырасти</b>
+      Больше людей будут дочитывать урок до конца. Как проверим: посчитаем тех, кто увеличил
+      шрифт, и сравним, как часто они доходят до конца урока.</div>
+  </div>
+
+  <figure class="plate">
+    <img src="art/type-specimen.jpg" alt="Образец: гротеск чернилами слева, антиква янтарём справа, внизу ряд кеглей 40 32 24 20 17 15" width="1100" height="619">
+    <figcaption><b>Два шрифта, две роли.</b> Слева без засечек — для кнопок и меню.
+      Справа с засечками — для текста урока. Внизу все размеры, которые остаются в продукте.</figcaption>
+  </figure>
+
+  <h3>Почему именно эти шрифты и этот кегль</h3>
+  <div class="args">
+    <div><h4><i>01</i>После сорока глаз хуже фокусируется вблизи</h4>
+      <p>Это возрастная дальнозоркость: начинается примерно в сорок, к пятидесяти есть почти
+        у всех. Вместе с ней слабеет способность различать близкие оттенки. Исследователи NN/g
+        проверяли это на людях старше 55 и советуют: шрифт не меньше 16 px, никакого
+        светло-серого текста, абзацы не по центру. Мы берём 17 px — их минимум плюс запас.</p>
+      <span class="src">NN/g · Apple HIG · Material</span></div>
+    <div><h4><i>02</i>Размер работает лучше жирности</h4>
+      <p>Жирный шрифт заметен за счёт толщины линий. А различать тонкую разницу в толщине глаз
+        с возрастом перестаёт раньше всего остального. Размер же читается по форме буквы — это
+        не теряется. Поэтому заголовок у нас <em>крупнее</em>, а не просто жирнее.</p>
+      <span class="src">контрастная чувствительность</span></div>
+    <div><h4><i>03</i>Разницу меньше 20% глаз не замечает</h4>
+      <p>Люди читают страницу по траектории в форме буквы F: сначала заголовки, потом начала
+        строк. Но заголовок попадёт в этот маршрут, только если он явно крупнее текста.
+        Сейчас «Our apps» и «AI for kids» отличаются на 3 пикселя — глаз их не разделяет.</p>
+      <span class="src">NN/g, движения глаз</span></div>
+    <div><h4><i>04</i>Почему Inter</h4>
+      <p>Широко открытые буквы и крупные строчные — их легче узнавать. Настройка
+        <code>cv05</code> добавляет хвостик букве <code>l</code>, чтобы её не путали с
+        <code>I</code> и <code>1</code>. Настройка <code>tnum</code> делает цифры одинаковой
+        ширины. Люди здесь работают с названиями моделей и кодами, где одна перепутанная
+        буква ломает всё.</p>
+      <span class="src">разборчивость знаков</span></div>
+    <div><h4><i>05</i>Почему в уроке шрифт с засечками</h4>
+      <p>На современных экранах читаются одинаково и с засечками, и без. Осталась привычка:
+        в США и Англии с засечками набраны New York Times, The Guardian, The Economist. Такой
+        шрифт читается как «это написал человек, который разбирается». Плюс сразу видно,
+        где читаешь, а где нажимаешь.</p>
+      <span class="src">привычка к изданиям</span></div>
+    <div><h4><i>06</i>Почему Заголовки С Большой Буквы</h4>
+      <p>Так требует руководство Apple для кнопок и пунктов меню. И так привыкли наши
+        пользователи: они двадцать лет работают в Windows и Office, где это стандарт.</p>
+      <span class="src">закон Якоба · Apple HIG</span></div>
+  </div>
+
+  <h3>Шкала — образцы в реальном размере</h3>
+  <div class="spec">
+    <div class="r"><div class="l">Display<b>40 / 1.15 · 700</b></div><div class="s t40">Master one skill per course</div></div>
+    <div class="r"><div class="l">H1<b>32 / 1.20 · 700</b></div><div class="s t32">Your Daily Challenges</div></div>
+    <div class="r"><div class="l">H2<b>24 / 1.25 · 600</b></div><div class="s t24">Our Apps</div></div>
+    <div class="r"><div class="l">H3<b>20 / 1.30 · 600</b></div><div class="s t20">Resume Builder</div></div>
+    <div class="r"><div class="l">Body<b>17 / 1.55 · 400</b></div><div class="s t17">Standalone AI tools for finished projects — from resumes to music and visuals.</div></div>
+    <div class="r"><div class="l">Caption<b>15 / 1.40 · 500</b></div><div class="s t15">7 lessons · 15 min a day</div></div>
+    <div class="r"><div class="l">Тело урока<b>19 / 1.60 · serif</b></div><div class="s tsr">A prompt is not a command — it is a brief. The more context you hand the model, the less you rewrite afterwards.</div></div>
+  </div>
+
+  <h3>Решение по пунктам</h3>
+  <ul class="rl">
+    <li class="hdr"><b>Что</b><span>Решение</span><span>Почему</span></li>
+    <li><b>Минимальный размер</b><span>15 px. Всё, что мельче, — убрать или увеличить.</span><span class="why">Мельче 15 px человек 45+ текст не читает — он его просто пропускает. Сейчас подписи под сертификатом набраны 11 px серым по серому.</span></li>
+    <li><b>Основной текст</b><span>17 px, расстояние между строками 1.55.</span><span class="why">Apple и Google советуют минимум 16 px для обычных людей. Для нашей аудитории берём с запасом.</span></li>
+    <li><b>Заголовки</b><span>Отличаются размером, каждая ступень крупнее на четверть.</span><span class="why">Жирность держится на толщине линий, а её глаз с возрастом перестаёт различать раньше, чем размер.</span></li>
+    <li><b>Большие буквы</b><span>Меню и кнопки — <em>Каждое Слово С Большой</em>. Описания — обычным текстом.</span><span class="why">Так требует Apple, и так привыкли пользователи по Windows и Office. Сейчас в одном списке ассистентов два разных правила.</span></li>
+    <li><b>Длина строки</b><span>60–70 знаков. Всё длиннее одной строки — по левому краю.</span><span class="why">Когда текст по центру, каждая строка начинается в новом месте, и глаз не знает, куда возвращаться.</span></li>
+    <li><b>Кнопка размера</b><span>Три буквы <code>A A A</code> (17 / 19 / 22 px) всегда видны в шапке урока. Выбор сохраняется для всех курсов.</span><span class="why">Для 45+ это не настройка, а условие: если шрифт мелкий, человек просто уходит. Спрятанное за два нажатия для них всё равно что отсутствует.</span></li>
+    <li><b>iOS</b><span>Подхватывать системный размер текста сразу.</span><span class="why">Если человек уже увеличил текст в настройках телефона — приложение должно это принять само. Бесплатно и решает большую часть проблемы.</span></li>
+    <li><b>Два английских</b><span>Американский и британский — отдельно, а не один «English».</span><span class="why"><code>resume</code> и <code>CV</code> — разные документы в разных странах. Сейчас продукт ошибается для обеих стран сразу, на одном экране.</span></li>
+  </ul>
+</section>
+
+<!-- ═══════════ 02 ЦВЕТА ═══════════ -->
+<section class="blk" id="c">
+  <div class="hd"><span class="n">02</span><h2>Цвета</h2></div>
+
+  <div class="hyp">
+    <span class="tg">Гипотеза</span>
+    <p>Сейчас синим покрашено всё подряд, поэтому кнопку не найти глазами. Снимаем синий
+      <b>со всего, что не является действием</b>: иконки уходят в графит, вторичные кнопки —
+      в серую обводку, активный пункт меню — в светлую заливку с полосой. После этого
+      <b>синий <code>#0A5CFF</code> остаётся единственным цветным пятном на экране</b> —
+      и это кнопка. Фон меняем с холодного серого на тёплый <code>#F6F4F1</code>,
+      у карточек появляется заметная рамка.</p>
+    <div class="eff"><b>Что должно вырасти</b>
+      Больше людей будут нажимать главную кнопку. Заодно закроем нарушение норм доступности:
+      сейчас белый текст на синих кнопках даёт 3.7 к 1 и проверку не проходит.</div>
+  </div>
+
+  <h3>Почему именно так</h3>
+  <div class="args">
+    <div><h4><i>01</i>Заметно то, что одно такое</h4>
+      <p>Выделяющийся элемент бросается в глаза — но только пока он один. Сейчас синий это
+        и кнопка, и активный пункт меню, и иконки, и ссылки, и значки, и полоска прогресса,
+        и фон баннера. Когда цветом залито 40% экрана, выделять им уже нечего.</p>
+      <span class="src">эффект фон Ресторфф</span></div>
+    <div><h4><i>02</i>Мы пробовали янтарный и отказались</h4>
+      <p>Логика была верная: отдельный цвет действия сильнее выделяется, и у Amazon кнопка
+        покупки именно янтарная. Но <code>#C2410C</code> в интерфейсе слишком близок к
+        ошибочному <code>#C5221F</code> — человек видит красноватую кнопку и настораживается.
+        Поэтому решаем ту же задачу иначе: не добавляем цвет, а <em>убираем</em> его отовсюду,
+        кроме действия.</p>
+      <span class="src">ассоциация с ошибкой</span></div>
+    <div><h4><i>03</i>Цвет работает не сам по себе, а к месту</h4>
+      <p>Исследование Сингха: до 62–90% первого впечатления о продукте — это цвет. Но работает
+        не «значение оттенка», а то, подходит ли цвет к ситуации. Поэтому мы объясняем каждый
+        цвет его ролью, а не формулой «оранжевый = энергия» из картинок в интернете.</p>
+      <span class="src">Singh, 2006</span></div>
+    <div><h4><i>04</i>Синий безопасен, но ничем не отличает</h4>
+      <p>Исследование Хэллока: синий меньше всех раздражает — в любом возрасте и у любого пола.
+        Но ровно поэтому он и не запоминается. Пусть синий отвечает за действие,
+        а отличаться будем тёплым фоном и антиквой в контенте.</p>
+      <span class="src">Hallock</span></div>
+    <div><h4><i>05</i>С возрастом глаз желтеет</h4>
+      <p>Хрусталик мутнеет — синий и фиолетовый выглядят тусклее, а синий и зелёный в тёмных
+        оттенках сливаются. Отсюда запрет: не различать состояния парой «синий / зелёный»
+        в мелких элементах, всегда добавлять форму или значок.</p>
+      <span class="src">возрастные изменения зрения</span></div>
+    <div><h4><i>06</i>Контраст — это не красота, а закон</h4>
+      <p>Белый текст на нынешнем синем <code>#0A84FF</code> даёт 3.7 к 1. Серый текст на сером
+        фоне — 3.0 к 1. Норма — минимум 4.5 к 1. В США, Канаде и Англии за это судятся:
+        там действуют ADA, AODA и Equality Act.</p>
+      <span class="src">WCAG 1.4.3 · ADA · AODA</span></div>
+  </div>
+
+  <h3>Токены — все контрасты посчитаны</h3>
+  <div class="sw">
+    <div><div class="f" style="background:#F6F4F1;"><span style="color:#15181D;">60%</span></div>
+      <div class="i"><div class="r">Фон</div><div class="h">#F6F4F1</div><div class="u">Тёплый нейтрал</div></div></div>
+    <div><div class="f" style="background:#FFFFFF;box-shadow:inset 0 0 0 1px #CFD3DA;"><span style="color:#15181D;">Surface</span></div>
+      <div class="i"><div class="r">Карточка</div><div class="h">#FFFFFF</div><div class="u">Всегда с видимой рамкой</div></div></div>
+    <div><div class="f" style="background:#16191D;"><span style="color:#fff;">17.6 : 1</span></div>
+      <div class="i"><div class="r">Текст</div><div class="h">#16191D</div><div class="u">Заголовки, body</div></div></div>
+    <div><div class="f" style="background:#4C535C;"><span style="color:#fff;">7.8 : 1</span></div>
+      <div class="i"><div class="r">Текст 2</div><div class="h">#4C535C</div><div class="u">Описания · AAA</div></div></div>
+    <div><div class="f" style="background:#0A5CFF;"><span style="color:#fff;">5.3 : 1</span></div>
+      <div class="i"><div class="r">Действие</div><div class="h">#0A5CFF</div><div class="u">Одна кнопка на экран</div></div></div>
+    <div><div class="f" style="background:#1B7F3B;"><span style="color:#fff;">5.1 : 1</span></div>
+      <div class="i"><div class="r">Успех</div><div class="h">#1B7F3B</div><div class="u">Прогресс, стрик, пройдено</div></div></div>
+    <div><div class="f" style="background:#6B4FD8;"><span style="color:#fff;">5.6 : 1</span></div>
+      <div class="i"><div class="r">Премиум</div><div class="h">#6B4FD8</div><div class="u">Платное и закрытое</div></div></div>
+    <div><div class="f" style="background:#C5221F;"><span style="color:#fff;">5.8 : 1</span></div>
+      <div class="i"><div class="r">Ошибка</div><div class="h">#C5221F</div><div class="u">Только ошибки</div></div></div>
+    <div><div class="f" style="background:#7D848E;"><span style="color:#fff;">3.4 : 1</span></div>
+      <div class="i"><div class="r">Рамка UI</div><div class="h">#7D848E</div><div class="u">Поля, вторичные кнопки</div></div></div>
+    <div><div class="f" style="background:#CFD3DA;"><span style="color:#15181D;">1.4 : 1</span></div>
+      <div class="i"><div class="r">Рамка карточки</div><div class="h">#CFD3DA</div><div class="u">Только разделение</div></div></div>
+  </div>
+
+  <h3>Решение по пунктам</h3>
+  <ul class="rl">
+    <li class="hdr"><b>Что</b><span>Решение</span><span>Почему</span></li>
+    <li><b>Синий</b><span>Только главное действие и активный пункт меню. <em>Не больше одной синей кнопки на экране.</em></span><span class="why">Вторая синяя кнопка убивает первую. Один акцент на экран — единственный способ его сохранить.</span></li>
+    <li><b>Вторичные кнопки</b><span>Серая обводка <code>#7D848E</code>, тёмный текст, значок слева.</span><span class="why">Так <code>Read</code> и <code>Listen</code> не спорят с <code>Start Practice</code>, а значок даёт второй признак помимо текста.</span></li>
+    <li><b>Зелёный</b><span>Прогресс, стрик, пройденные уроки. Одинаково на сайте и в приложении.</span><span class="why">Сейчас кружки уроков синие на сайте и зелёные в приложении. Одно и то же, а выглядит по-разному.</span></li>
+    <li><b>Фиолетовый</b><span>Платное и закрытое, с замком и подписью «откроется после урока 3».</span><span class="why">Сейчас «сломалось», «ещё не открыто» и «за деньги» — один и тот же серый. Три ситуации, один сигнал.</span></li>
+    <li><b>Красный</b><span>Только ошибки. С кнопки выхода снять.</span><span class="why">Сейчас самое яркое пятно в меню — кнопка выхода. Внимание притягивает то, что нужно реже всего.</span></li>
+    <li><b>Состояния</b><span>Всегда цвет плюс значок или форма.</span><span class="why">8% мужчин не различают цвета, плюс с возрастом синий и зелёный сливаются.</span></li>
+    <li><b>Рамки</b><span><code>#CFD3DA</code> для разделения, <code>#7D848E</code> там, где рамка и есть кнопка или поле.</span><span class="why">Норма требует отличия минимум в 3 раза. Сейчас рамка <code>#EEEEEE</code> на фоне <code>#F5F5F5</code> отличается в 1.06 раза — то есть не отличается.</span></li>
+    <li><b>Фон и карточки</b><span>Фон тёплый <code>#F6F4F1</code>, карточка белая с рамкой и лёгкой тенью.</span><span class="why">Сейчас белая карточка на сером фоне отличается в 1.09 раза. Глаз видит одно серое поле, а не карточки.</span></li>
+    <li><b>Тёмная тема</b><span>Обязательна, на тех же цветах.</span><span class="why">Телефон включает её сразу во всех приложениях. То, что остаётся светлым, выглядит недоделанным.</span></li>
+  </ul>
+</section>
+
+<!-- ═══════════ 03 МАСКОТ ═══════════ -->
+<section class="blk" id="m">
+  <div class="hd"><span class="n">03</span><h2>Маскот — Esco</h2></div>
+
+  <div class="hyp">
+    <span class="tg">Гипотеза</span>
+    <p>Добавляем персонажа — <b>Esco</b>. Это <b>искра</b>, выросшая из логотипа Jobescape,
+      в шести состояниях. Он не декорация, а <b>система реакций</b>: появляется в пустых
+      экранах, в онбординге, при генерации ответа, при завершении урока и когда стрик
+      под угрозой.</p>
+    <div class="eff"><b>Что должно вырасти</b>
+      Больше людей вернутся на следующий день и после пропуска. Как проверим: посмотрим,
+      сколько человек вернулось после напоминания о стрике.</div>
+  </div>
+
+  <figure class="plate">
+    <img src="art/esco-sheet.jpg" alt="Шесть состояний маскота Esco: idle, pointing, celebrating, thinking, concerned, explaining" width="1100" height="277">
+    <figcaption><b>Канонический контур.</b> Отрисован кодом из SVG-пути, а не подобран на глаз —
+      форма, пропорции и посадка глаз одинаковы во всех состояниях.</figcaption>
+  </figure>
+
+  <h3>Почему маскот и почему именно такой</h3>
+  <div class="args">
+    <div><h4><i>01</i>Duolingo держит людей не картинкой, а реакцией</h4>
+      <p>Сова работает не потому, что нарисована. Она работает потому, что отвечает на твои
+        действия: радуется, расстраивается, ждёт. Плюс включается нежелание терять то, что уже
+        накопил. Неподвижный персонаж в углу не даёт ничего.</p>
+      <span class="src">нежелание терять накопленное</span></div>
+    <div><h4><i>02</i>Почему не зверёк</h4>
+      <p>Сова = школа = детство. У абстрактной фигуры такой привязки нет. Опасение, что
+        персонаж сделает продукт несерьёзным, верное — но решается оно выбором формы,
+        а не отказом от персонажа.</p>
+      <span class="src">что считывается как «детское»</span></div>
+    <div><h4><i>03</i>У взрослых платных продуктов маскоты есть</h4>
+      <p><b>Headspace</b> — медитация, аудитория 30–55, персонажи абстрактные кляксы, и детским
+        его никто не считает. <b>Mailchimp</b> — сервис для бизнеса. <b>GEICO</b> и
+        <b>Progressive</b> — страхование, а это серьёзнее обучения.</p>
+      <span class="src">примеры рынка США и Англии</span></div>
+    <div><h4><i>04</i>Почему именно искра</h4>
+      <p>Искра — общепринятый значок ИИ, и она уже есть в продукте: на иконке AI Tools и рядом
+        с названием модели. Персонаж работает на узнавание бренда, а не живёт отдельно.
+        И одинаково читается в 16 пикселей в уведомлении и на весь экран.</p>
+      <span class="src">экономия на узнавании</span></div>
+    <div><h4><i>05</i>Почему его нет на экране оплаты</h4>
+      <p>Там решается вопрос денег и доверия. Персонаж снижает серьёзность ровно в той точке,
+        где человек 45+ и так максимально насторожен. Запрет на эту зону — и есть ответ
+        на риск «маскот всё испортит».</p>
+      <span class="src">уместность по ситуации</span></div>
+    <div><h4><i>06</i>Сколько это стоит</h4>
+      <p>Шесть неподвижных SVG и две анимации. День работы иллюстратора, полдня разработчика.
+        Менять фирменный стиль не нужно: фигура вырастает из логотипа, а не заменяет его.</p>
+      <span class="src">объём работ</span></div>
+  </div>
+
+  <h3>Шесть состояний — живые</h3>
+  <p class="line">Не картинки, а движение. Ниже маскот анимирован так, как он будет вести себя
+    в продукте: петли короткие, амплитуда небольшая, ничего не крутится бесконечно на виду.
+    При включённой системной настройке «меньше движения» всё замирает.</p>
+
+  <div class="esco">
+    <div>
+      <div class="stage">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Esco idle">
+          <g class="a-float">
+            <path d="M50 3C50 29 71 50 97 50C71 50 50 71 50 97C50 71 29 50 3 50C29 50 50 29 50 3Z" fill="#0A5CFF"/>
+            <g class="a-eye"><ellipse cx="42" cy="46" rx="4.2" ry="5" fill="#fff"/><ellipse cx="58" cy="46" rx="4.2" ry="5" fill="#fff"/></g>
+          </g>
+        </svg>
+      </div>
+      <div class="nm">idle</div>
+      <div class="ds">Пустые экраны, онбординг</div>
+      <span class="tm">Плавает и моргает</span>
+    </div>
+
+    <div>
+      <div class="stage">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Esco pointing">
+          <g class="a-lean">
+            <path d="M50 3C50 29 71 50 97 50C71 50 50 71 50 97C50 71 29 50 3 50C29 50 50 29 50 3Z" fill="#0A5CFF"/>
+            <ellipse cx="46" cy="44" rx="4.2" ry="5" fill="#fff"/><ellipse cx="62" cy="44" rx="4.2" ry="5" fill="#fff"/>
+          </g>
+          <path class="a-jab" d="M78 74L96 82L78 90Z" fill="#C2410C"/>
+        </svg>
+      </div>
+      <div class="nm">pointing</div>
+      <div class="ds">Навигатор — одна цель за раз</div>
+      <span class="tm">Наклон и толчок к цели</span>
+    </div>
+
+    <div>
+      <div class="stage">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Esco celebrating">
+          <circle class="a-c1" cx="16" cy="40" r="3.5" fill="#1B7F3B"/>
+          <circle class="a-c2" cx="84" cy="42" r="3" fill="#0A5CFF"/>
+          <circle class="a-c3" cx="70" cy="34" r="2.5" fill="#6B4FD8"/>
+          <g class="a-bounce">
+            <path d="M50 8C50 32 70 52 94 52C70 52 50 72 50 96C50 72 30 52 6 52C30 52 50 32 50 8Z" fill="#C2410C"/>
+            <path d="M37 47L42 42L47 47" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M53 47L58 42L63 47" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="nm">celebrating</div>
+      <div class="ds">Урок, стрик, сертификат</div>
+      <span class="tm">Подпрыгивает, летит конфетти</span>
+    </div>
+
+    <div>
+      <div class="stage">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Esco thinking">
+          <g class="a-sway">
+            <path d="M50 14C50 38 69 57 93 57C69 57 50 76 50 100C50 76 31 57 7 57C31 57 50 38 50 14Z" fill="#0A5CFF"/>
+            <ellipse cx="43" cy="53" rx="3" ry="3.6" fill="#fff"/><ellipse cx="57" cy="53" rx="3" ry="3.6" fill="#fff"/>
+          </g>
+          <circle class="a-d1" cx="66" cy="16" r="3.4" fill="#0A5CFF"/>
+          <circle class="a-d2" cx="78" cy="10" r="4.2" fill="#0A5CFF"/>
+          <circle class="a-d3" cx="91" cy="6" r="5" fill="#0A5CFF"/>
+        </svg>
+      </div>
+      <div class="nm">thinking</div>
+      <div class="ds">Генерация ответа в чате</div>
+      <span class="tm">Качается, точки бегут по очереди</span>
+    </div>
+
+    <div>
+      <div class="stage">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Esco concerned">
+          <g class="a-sink">
+            <path d="M50 12C50 36 69 55 93 55C69 55 50 74 50 98C50 74 31 55 7 55C31 55 50 36 50 12Z" fill="#7D848E"/>
+            <ellipse cx="42" cy="52" rx="3.4" ry="4" fill="#fff"/><ellipse cx="58" cy="52" rx="3.4" ry="4" fill="#fff"/>
+            <path d="M42 66Q50 61 58 66" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="nm">concerned</div>
+      <div class="ds">Стрик под угрозой</div>
+      <span class="tm">Оседает и гаснет</span>
+    </div>
+
+    <div>
+      <div class="stage">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Esco explaining">
+          <g class="a-nod">
+            <path d="M50 3C50 29 71 50 97 50C71 50 50 71 50 97C50 71 29 50 3 50C29 50 50 29 50 3Z" fill="#0A5CFF"/>
+            <ellipse cx="42" cy="46" rx="4.2" ry="5" fill="#fff"/><ellipse cx="58" cy="46" rx="4.2" ry="5" fill="#fff"/>
+          </g>
+          <rect x="66" y="6" width="32" height="21" rx="6" fill="#fff" stroke="#0A5CFF" stroke-width="3"/>
+          <path d="M72 26L72 35L80 26Z" fill="#fff" stroke="#0A5CFF" stroke-width="3" stroke-linejoin="round"/>
+          <circle class="a-d1" cx="75" cy="17" r="2.2" fill="#0A5CFF"/>
+          <circle class="a-d2" cx="82" cy="17" r="2.2" fill="#0A5CFF"/>
+          <circle class="a-d3" cx="89" cy="17" r="2.2" fill="#0A5CFF"/>
+        </svg>
+      </div>
+      <div class="nm">explaining</div>
+      <div class="ds">Рядом со сложным термином</div>
+      <span class="tm">Кивает, в облаке печатает</span>
+    </div>
+  </div>
+
+  <p class="line"><b>У маскота своя палитра, и она не равна цветам интерфейса.</b>
+    Синий — обычное состояние, янтарь <code>#C2410C</code> — внимание и радость, серый
+    <code>#7D848E</code> — угасание. В интерфейсе янтарь мы отвергли, потому что кнопка такого
+    цвета путается с ошибкой. Но Esco не кнопка: на него не нажимают, он ничего не запускает,
+    поэтому цвет у него работает как мимика, а не как приглашение к действию.</p>
+
+  <ul class="rl">
+    <li class="hdr"><b>Что</b><span>Правило</span><span>Почему</span></li>
+    <li><b>Палитра</b><span>Синий — обычное, янтарь — внимание и радость, серый — угасание.</span><span class="why">Это мимика персонажа, а не цвета интерфейса. Esco никогда не выглядит как кнопка, поэтому янтарь здесь безопасен.</span></li>
+    <li><b>Длительность</b><span>1.3–3.4 секунды на петлю, плавное замедление по краям.</span><span class="why">Короче секунды движение читается как дёрганье, длиннее четырёх — как зависание.</span></li>
+    <li><b>Амплитуда</b><span>Не больше 14 пикселей смещения и 6% масштаба.</span><span class="why">Крупное движение в углу экрана перетягивает внимание с кнопки, ради которой человек пришёл.</span></li>
+    <li><b>Когда играет</b><span>Только пока состояние актуально: <code>thinking</code> — пока идёт ответ, <code>celebrating</code> — три секунды после урока.</span><span class="why">Бесконечная анимация на виду раздражает уже на третий заход и первой уходит в «выключить всё».</span></li>
+    <li><b>Меньше движения</b><span>При системной настройке анимации не запускаются вовсе.</span><span class="why">Требование WCAG 2.3.3, и для части людей 45+ движение на периферии реально мешает читать.</span></li>
+  </ul>
+
+</section>
+
+<!-- ═══════════ 04 МЕНТОР ═══════════ -->
+<section class="blk" id="mk">
+  <div class="hd"><span class="n">04</span><h2>Ментор</h2></div>
+
+  <div class="hyp">
+    <span class="tg">Гипотеза</span>
+    <p>Ментор — это <b>ИИ, а не человек</b>. Значит выдуманная биография вроде «12 лет в Google»
+      из карточки убирается. Вместо неё — плашка <b>AI MENTOR</b>, честное обещание
+      «знает каждый урок вашего плана» и мелкая строка «AI-generated answers».</p>
+    <div class="eff"><b>Что должно вырасти</b>
+      Конверсия в первое обращение к ментору — потому что обещание стало проверяемым.
+      И снимается риск обвала доверия при разоблачении.</div>
+  </div>
+
+  <figure class="plate">
+    <img src="art/mark-b2.jpg" alt="Карточка ментора: фото, плашка AI MENTOR, строка «знает каждый урок вашего плана», дисклеймер" width="1100" height="619">
+    <figcaption><b>Марк рядом с Esco.</b> Конфликт «абстрактная фигура и живой человек»
+      решается не стилизацией, а разделением ролей и масштаба: Esco всегда маленький
+      и служебный, Марк крупный и якорный. Значок-искра связывает их, не трогая ни лица,
+      ни доверия.</figcaption>
+  </figure>
+
+  <div class="args">
+    <div><h4><i>01</i>Асимметрия доверия</h4>
+      <p>Весь антискам-блок построен на том, что 45+ в США и Англии ищут доказательства
+        подлинности продукта. Если человек поверит в биографию, а потом поймёт, что её нет,
+        ущерб будет больше, чем если бы мы не обещали ничего. Разоблачённая ложь бьёт сильнее,
+        чем отсутствие регалий.</p>
+      <span class="src">доверие 45+</span></div>
+    <div><h4><i>02</i>Регуляторный риск</h4>
+      <p>Выдуманные квалификации и выдача ИИ за человека — зона внимания FTC в США,
+        статей о прозрачности в EU AI Act, калифорнийского закона о ботах, правил ASA и CMA
+        в Англии. Это направление, а не заключение: проверять юристу по каждому рынку.</p>
+      <span class="src">FTC · EU AI Act · ASA</span></div>
+    <div><h4><i>03</i>Честное обещание сильнее выдуманного</h4>
+      <p>«12 лет в Google» нельзя ни проверить, ни применить к своей ситуации. «Знает каждый
+        урок вашего плана» проверяется первым же вопросом и отвечает на настоящую боль:
+        застрял на третьем уроке, а спросить некого.</p>
+      <span class="src">проверяемость</span></div>
+    <div><h4><i>04</i>Куда переносим доверие</h4>
+      <p>На то, что真: рейтинг App Store с числом отзывов, отзывы с именем, фото и городом,
+        видимая политика возврата, юрлицо и адрес. Всё это уже заложено в экран оплаты —
+        и там ментор не нужен вовсе.</p>
+      <span class="src">антискам-пакет</span></div>
+  </div>
+</section>
+
+<!-- ═══════════ 05 АРХИТЕКТУРА ═══════════ -->
+<section class="blk" id="ia">
+  <div class="hd"><span class="n">05</span><h2>Архитектура</h2></div>
+
+  <div class="hyp">
+    <span class="tg">Гипотеза</span>
+    <p>Главное изменение здесь — не новые разделы, а <b>новый слой</b>. Сейчас вход ведёт
+      сразу в план, то есть в содержание курса. Мы ставим над ним <b>главную страницу</b>,
+      которая отвечает на вопрос «что мне делать сегодня»: урок дня, стрик, активный челлендж
+      и прогресс плана в одном месте. Сам план со змейкой уезжает на уровень глубже.
+      Плюс сводим сайт и приложение к <b>одинаковым пяти разделам</b>.</p>
+    <div class="eff"><b>Что должно вырасти</b>
+      Время до первого действия за заход. Сейчас человек попадает в карту курса и должен
+      сам найти, где он остановился. Больше людей дойдут до третьего урока и вернутся
+      через неделю.</div>
+  </div>
+
+  <h3>Что происходит при входе</h3>
+  <div class="sc">
+    <table>
+      <thead><tr><th></th><th>Сейчас</th><th>Предлагается</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Первый экран</strong></td><td>сразу персональный план: змейка уроков и закрытый сертификат</td><td><strong>главная</strong>: урок дня с кнопкой, стрик, челлендж, прогресс плана</td></tr>
+        <tr><td><strong>Змейка</strong></td><td>это и есть первый экран</td><td>на уровень глубже, по нажатию на прогресс</td></tr>
+        <tr><td><strong>Прогресс</strong></td><td>разбросан: стрик в шапке, процент у названия плана, статистика в профиле</td><td>собран на главной одной строкой</td></tr>
+        <tr><td><strong>Челленджи</strong></td><td>есть на вебе отдельным пунктом, в iOS-табах отсутствуют; у активного челленджа нет своего места</td><td>своя вкладка, активный челлендж с дедлайном наверху</td></tr>
+        <tr><td><strong>Ответ на «что дальше»</strong></td><td>надо найти самому в карте курса</td><td>дан первым экраном</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="line"><b>Челленджи мы не добавляем — мы их переносим.</b> В продукте они уже есть:
+    на вебе это пункт меню с каталогом 7 / 14 / 28 дней. Проблема в другом — начатый челлендж
+    некуда положить. Он живёт в каталоге, про него не напоминают, и человек про него забывает
+    на второй день.</p>
+
+  <div class="sc">
+    <table>
+      <thead><tr><th>Раздел</th><th>Было</th><th>Что внутри</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Home</strong></td><td><em>не было</em> — вход вёл сразу в план</td><td>урок дня, стрик, активный челлендж, список планов</td></tr>
+        <tr><td><strong>My Plan</strong></td><td>Personal Plan / My plan</td><td>змейка курса и переключатель планов</td></tr>
+        <tr><td><strong>Challenges</strong></td><td>пункт меню на вебе, в iOS-табах нет; активному челленджу негде жить</td><td>своя вкладка: активный челлендж с дедлайном и каталог 7 / 14 / 28 дней</td></tr>
+        <tr><td><strong>AI Tools</strong></td><td>AI tools</td><td>Chat · Assistants · Automation · Prompt Library</td></tr>
+        <tr><td><strong>Apps</strong></td><td>Apps</td><td>Resume Builder · Portfolio · 7ART · AI for Kids</td></tr>
+        <tr><td><strong>Профиль</strong></td><td>вкладка в таббаре</td><td><em>аватар справа вверху</em>: статистика, настройки чтения, сертификаты</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="line">Вкладок по-прежнему пять: <code>Home · My Plan · Challenges · AI Tools · Apps</code>.
+    Место под главную освободил <b>профиль — он уехал в аватар справа вверху</b>, как в Gmail
+    и LinkedIn: открывают его редко, а вкладку он занимал зря. <b>Apps остались на первом
+    уровне</b> — это монетизация, её нельзя прятать. Каталог планов вкладки не требует:
+    он открывается из переключателя через <code>Add a plan</code>.</p>
+  <p class="line">На вебе роль первой вкладки играет <b>логотип</b> — нажатие на него ведёт
+    на главную. Это универсальная конвенция, спорить не с чем. В приложении логотип
+    как навигация не работает: человек 45+ не догадается, что по нему можно нажать,
+    поэтому там главной нужна вкладка.</p>
+
+  <h3>Почему над планом нужна главная</h3>
+  <div class="args">
+    <div style="background:var(--paper-2);">
+      <h4><i>01</i>Мини-опрос среди пользователей 45+</h4>
+      <p>Перед тем как рисовать, мы спросили саму аудиторию, что она ожидает увидеть на первом
+        экране. Расположение выбрано <em>по её ответам</em>, а не по нашему вкусу: люди хотят
+        сначала понять, как у них дела и что делать сегодня, и только потом смотреть содержание
+        курса. Это единственный аргумент здесь, который опирается не на исследования со стороны,
+        а на разговор с нашими же пользователями.</p>
+      <p style="margin-top:.5rem;color:var(--warn);font-size:.85rem;">⚠︎ Вставить сюда число
+        опрошенных и две-три цифры из ответов — без них аргумент звучит слабее, чем он есть.</p>
+      <span class="src">собственный опрос</span>
+    </div>
+    <div><h4><i>02</i>Первый экран отвечает не на тот вопрос</h4>
+      <p>Человек открывает приложение с вопросом «что мне делать сегодня». А получает
+        содержание курса — карту всех уроков сразу. Это ответ на другой вопрос: «из чего
+        состоит курс». Его тоже надо уметь задать, но не первым и не каждый день.</p>
+      <span class="src">намерение при входе</span></div>
+    <div><h4><i>03</i>Прогресс разбросан по трём местам</h4>
+      <p>Стрик в шапке, процент рядом с названием плана, статистика в профиле, челлендж
+        вообще в другом разделе. Человек не может одним взглядом понять, как у него дела.
+        Главная собирает всё в одну строку и одну карточку.</p>
+      <span class="src">цена переключения внимания</span></div>
+    <div><h4><i>04</i>Змейка — это справочник, а не рабочий экран</h4>
+      <p>Карта пути нужна раз в несколько дней: посмотреть, сколько осталось, или вернуться
+        к пройденному. Урок дня нужен каждый раз. Сейчас редкое действие занимает место
+        частого — поэтому змейка уезжает на уровень ниже.</p>
+      <span class="src">частота против важности</span></div>
+    <div><h4><i>05</i>Челленджи не добавляем, а переносим</h4>
+      <p>На вебе они уже есть — каталог 7 / 14 / 28 дней. Но у <em>начатого</em> челленджа нет
+        своего места: он лежит в каталоге вперемешку с теми, что ещё не начаты, про него никто
+        не напоминает, и на второй день человек про него забывает. Дедлайн без напоминания
+        не работает.</p>
+      <span class="src">брошенные обязательства</span></div>
+    <div><h4><i>06</i>План и челлендж — разные сущности</h4>
+      <p>У плана свой контент и нет дедлайна. У челленджа свой контент и есть дедлайн.
+        Стрик при этом сквозной и считает любую активность. Если их слить, у человека
+        окажется два «урока на сегодня» и он будет выбирать в момент, когда выбирать
+        не должен.</p>
+      <span class="src">модель данных</span></div>
+    <div><h4><i>07</i>Чем больше выбор, тем дольше решаешь</h4>
+      <p>Раньше челленджи лежали внутри каталога и их не замечали. Но и шестая вкладка
+        перегрузила бы меню. Решение: убрать из меню то, у чего есть другой вход
+        (<code>Courses</code>), и освободить место тому, у чего входа нет.</p>
+      <span class="src">закон Хика</span></div>
+    <div><h4><i>08</i>Чем ближе финиш, тем сильнее тянет</h4>
+      <p>Сейчас на первом экране самый крупный объект — закрытый платиновый сертификат при
+        нуле процентов. Человеку показывают, как далеко идти, и не показывают, что делать
+        сейчас. «Lesson 4 of 16» работает, «0%» — нет.</p>
+      <span class="src">эффект близкой цели</span></div>
+    <div><h4><i>09</i>Чем крупнее и ближе кнопка, тем быстрее по ней попадут</h4>
+      <p>Главная кнопка должна быть самой большой и самой близкой — в телефоне это нижняя
+        треть экрана. Сейчас она не крупная, не близкая и уходит за нижний край.</p>
+      <span class="src">закон Фиттса</span></div>
+  </div>
+</section>
+
+<!-- ═══════════ 06 ЭКРАНЫ ═══════════ -->
+<section class="blk" id="s">
+  <div class="hd"><span class="n">06</span><h2>Все экраны</h2></div>
+  <p class="line">Семнадцать экранов, каждый в двух версиях. Данные сходятся везде: план
+    <code>AI Influencer</code>, <code>Lesson 4 of 16</code>, 25%; челлендж
+    <code>Claude Basics</code>, <code>Day 3 of 7</code>; стрик 3.</p>
+  <p class="line">Экраны сгруппированы <b>по маршруту пользователя</b>, а не по порядку рисования.
+    Внутри каждой группы указано, откуда человек туда попадает.</p>
+
+  <div class="hyp" style="border-color:var(--warn);margin-top:1.5rem;">
+    <span class="tg" style="color:var(--warn);">Как читать эти макеты</span>
+    <p>Это <b>примерное видение расположения</b>, а не готовая передача в разработку.
+      Макеты показывают, как логично разложить экраны, если над планом появляется главная
+      страница — на структуру, а не на пиксели.</p>
+    <div class="eff"><b>Что может не совпасть с продуктом</b>
+      Отдельные подписи, числа и порядок карточек могут расходиться с боевыми экранами.
+      Иконки и картинки здесь плоские и сдержанные, а в продукте они ярче и живее — это
+      осознанное упрощение для макета, а не предложение обесцветить интерфейс.
+      Часть иллюстраций сгенерирована, поэтому мелкие детали местами приблизительны.
+      Источник правды по форме и цвету — разделы 01–04 выше.</div>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Маршрут целиком</span>
+    <h3>Куда ведёт каждое нажатие</h3>
+    <span class="path">
+      <b>Логотип</b> или <b>вкладка Home</b> <i>→</i> <b>① Главная</b><br>
+      <b>① Главная</b> <i>→</i> <b>Start Practice</b> <i>→</i> <b>⑨ Урок</b><br>
+      <b>вкладка My Plan</b> <i>→</i> <b>② Змейка плана</b><br>
+      <b>② Змейка</b> <i>→</i> шапка с названием плана <i>→</i> <b>③ Переключатель</b><br>
+      <b>③ Переключатель</b> <i>→</i> <b>Add a plan</b> <i>→</i> <b>④ Опросник</b> <i>→</i> <b>⑤ Подобранное</b> <i>→</i> <b>⑥ Все планы</b><br>
+      <b>Аватар справа вверху</b> <i>→</i> <b>⑮ Профиль</b>
+    </span>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Группа A · 1 экран</span>
+    <h3>Главная</h3>
+    <p>Новый слой, которого в продукте не было. Сейчас вход ведёт сразу в план — то есть
+      в содержание курса. Главная отвечает на другой вопрос: <b>«как у меня дела и что делать
+      сегодня»</b>. Вход по логотипу и по первой вкладке.</p>
+  </div>
+
+  <div class="screen" style="border-top:0;padding-top:.5rem;margin-top:1rem;">
+    <div class="sh"><span class="num">01</span><h4>Главная</h4><span class="tag">новый экран</span></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-1-home.jpg" alt="Главная, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-1-home.jpg" alt="Главная, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Весь прогресс одной строкой: стрик, уроки, время за неделю — раньше это лежало в трёх разных местах</li>
+      <li>Урок дня с единственной синей кнопкой — самый крупный объект экрана</li>
+      <li>Активный челлендж и список планов ниже: видно всё, чем занят, без перехода</li>
+      <li>Профиль ушёл в аватар справа вверху и освободил вкладку</li>
+    </ul>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Группа B · 5 экранов</span>
+    <h3>Персональный план</h3>
+    <p>Отдельная ветка со своей вкладкой. Здесь живёт змейка — то, что раньше было первым
+      экраном продукта.</p>
+    <p>Цепочка добавления плана выстроена так: <b>сначала вопрос, потом короткий список,
+      и только потом весь каталог</b>. Смысл опросника в том, чтобы сократить 24 плана до трёх
+      <em>до того</em>, как человек что-то увидит. Если показать каталог первым, опросник
+      уже не нужен.</p>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">02</span><h4>My Plan — змейка</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS — вертикальная</div><img src="art/v2-ios-2-myplan.jpg" alt="Змейка плана, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб — свёрнута по строкам</div><img src="art/v2-web-2-myplan.jpg" alt="Змейка плана, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Откуда:</b> вкладка <code>My Plan</code></li>
+      <li>Название плана в шапке — это переключатель с явным шевроном, а не заголовок</li>
+      <li>Три состояния: пройдено зелёным, текущее синим, закрытое серым <b>с замком</b></li>
+      <li>На вебе путь свёрнут по строкам — вертикальный занял бы три экрана прокрутки</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">03</span><h4>Переключатель планов</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS — шторка снизу</div><img src="art/v2-ios-3-switch.jpg" alt="Переключатель планов, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб — выпадающий список</div><img src="art/v2-web-3-switch.jpg" alt="Переключатель планов, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Откуда:</b> нажатие на название плана в шапке</li>
+      <li>Раньше это была кнопка <code>Show</code>, которая читается как «показать/скрыть», а не «сменить план»</li>
+      <li>Паттерн уже стандартизирован: смена аккаунта в Gmail, профиля в Netflix, карты в банке — всегда сверху, всегда с шевроном</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">04</span><h4>Опросник — шаг 1</h4><span class="tag">новый экран</span></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-4-quiz.jpg" alt="Опросник, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-4-quiz.jpg" alt="Опросник, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Откуда:</b> кнопка <code>Add a plan</code> из переключателя</li>
+      <li>Шесть карточек ролей вместо двадцати четырёх планов: человек не знает названий курсов, но точно знает, кем работает</li>
+      <li>Выход для тех, кто не хочет отвечать: <code>Skip and browse all 24 plans</code></li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">05</span><h4>Подобранное — шаг 2</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-5-matched.jpg" alt="Подобранные планы, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-5-matched.jpg" alt="Подобранные планы, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Откуда:</b> ответ на вопрос в опроснике</li>
+      <li>Три плана вместо двадцати четырёх — и сказано, почему именно эти: «Picked because you chose HR»</li>
+      <li>Внизу выход в полный каталог, если ни один не подошёл</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">06</span><h4>Все планы — каталог</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-6-allplans.jpg" alt="Все планы, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-6-allplans.jpg" alt="Все планы, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Откуда:</b> «browse all plans» из опросника или из подобранного</li>
+      <li>Каша из 24 пунктов разобрана на группы: для работы, заработать на стороне, продвинутое</li>
+      <li>Разработчики в отдельной группе — бухгалтер больше не видит <code>Claude Code</code> и не решает, что ошибся адресом</li>
+      <li>Карточка продаёт результат, а не название, и у каждой цветной значок домена вместо бежевого плейсхолдера</li>
+    </ul>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Группа C · 2 экрана</span>
+    <h3>Челленджи</h3>
+    <p>Челленджи мы не добавляем — они уже есть на вебе. Мы даём им <b>своё место на iOS</b>
+      и дом для <em>начатого</em> челленджа: сейчас он лежит в каталоге вперемешку
+      с неначатыми, про него не напоминают, и на второй день человек про него забывает.
+      Дедлайн без напоминания не работает.</p>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">07</span><h4>Challenges</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-7-challenges.jpg" alt="Челленджи, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-7-challenges.jpg" alt="Челленджи, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Активный челлендж сверху с лентой из семи дней и датой окончания</li>
+      <li>Каталог с фильтром длительности снизу: начатый — синей кнопкой, остальные контурной</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">08</span><h4>Внутри челленджа</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-8-challenge.jpg" alt="Внутри челленджа, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-8-challenge.jpg" alt="Внутри челленджа, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Свой workflow: дни, остаток, урок дня и обещание сертификата на седьмой день</li>
+      <li><code>Thr</code> исправлено на <code>Thu</code>; порядок дней зависит от страны</li>
+    </ul>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Группа D · 1 экран</span>
+    <h3>Урок</h3>
+    <p>Конечная точка обеих веток — и плана, и челленджа. Сюда ведёт <code>Start Practice</code>
+      с главной и <code>Continue Challenge</code> из челленджа.</p>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">09</span><h4>Урок — ридер</h4><span class="tag">ядро продукта</span></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-9-lesson.jpg" alt="Урок, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-9-lesson.jpg" alt="Урок, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><code>Read | Listen</code> и <code>A A A</code> всегда в шапке; значения хранятся в профиле и не сбрасываются при смене курса</li>
+      <li>Текст антиквой, по левому краю, 60–70 знаков в строке</li>
+      <li>Esco объясняет термин прямо в тексте, а не в отдельном словаре</li>
+    </ul>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Группа E · 4 экрана</span>
+    <h3>ИИ-инструменты</h3>
+    <p>Четыре экрана под одной вкладкой, переключаются сегментами. К обучению отношения
+      не имеют — это то, ради чего человек и учился.</p>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">10</span><h4>AI Tools · Chat</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-10-chat.jpg" alt="Чат, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-10-chat.jpg" alt="Чат, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Счётчик получил подпись: было <code>★5</code> на вебе и <code>★999+</code> в приложении без пояснений</li>
+      <li>Из поля ввода убран второй вопрос — вверху «How can I help you?», в поле «Ask anything…»</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">11</span><h4>AI Tools · Assistants</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-11-assistants.jpg" alt="Ассистенты, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-11-assistants.jpg" alt="Ассистенты, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Названия по действию: <code>Simplifier</code> → <code>Text Simplifier</code>, <code>Email</code> → <code>Email Writer</code></li>
+      <li>Регистр везде одинаковый. Было в одной сетке <code>Text summary</code> и <code>Landing Page Title</code></li>
+      <li>Платное помечено фиолетовым и словом <code>Unlock</code>, а не серым, как сломанное</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">12</span><h4>AI Tools · Automation</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-12-automation.jpg" alt="Автоматизации, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-12-automation.jpg" alt="Автоматизации, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Переключатель вместо кнопки <code>Open</code></b> — видно списком, что включено, без захода в каждую карточку</li>
+      <li>Названия по результату: <code>Weather agent</code> → <code>Weather Brief</code>. Для 45+ «агент» — это страховой агент</li>
+      <li>Состояние показано тремя способами: цвет, слово, положение переключателя</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">13</span><h4>AI Tools · Prompt Library</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-13-prompts.jpg" alt="Библиотека промптов, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-13-prompts.jpg" alt="Библиотека промптов, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Первый ряд — рабочие сценарии. Аниме и самураи ушли в фильтр <code>Cinematic</code></li>
+      <li><code>Go unlimited</code>, <code>Get unlimited access</code> и <code>Get PRO</code> → одно имя <code>Get Unlimited</code></li>
+    </ul>
+  </div>
+
+  <div class="grp">
+    <span class="gl">Группа F · 4 экрана</span>
+    <h3>Приложения, профиль, стрик, оплата</h3>
+    <p>Вне основного маршрута обучения. Профиль открывается из аватара, стрик и оплата —
+      поверх содержимого, а не отдельными страницами.</p>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">14</span><h4>Apps</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-14-apps.jpg" alt="Приложения, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-14-apps.jpg" alt="Приложения, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><code>Try</code> → <code>Open</code>: кнопка говорит, что произойдёт. Раньше бледно-голубая капсула читалась как значок</li>
+      <li><code>CV Builder</code> → <code>Resume Builder</code> для США — это разные документы в разных странах</li>
+      <li>Детское приложение получает родительский вход и возрастную проверку — требование COPPA и Children's Code</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">15</span><h4>Профиль</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-15-profile.jpg" alt="Профиль, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-15-profile.jpg" alt="Профиль, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><b>Откуда:</b> аватар справа вверху на любом экране</li>
+      <li><b>Reading Preferences живут здесь</b> и применяются ко всем курсам — так чинится баг «при смене плана пропал выбор аудио/текст»</li>
+      <li>Метрики получили глаголы: было <code>Courses 0 / Lessons 16</code>, стало <code>Plans started 2 / Lessons done 16</code></li>
+      <li><code>Log Out</code> серым внизу, без красного</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">16</span><h4>Стрик</h4></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS — полный экран</div><img src="art/v2-ios-16-streak.jpg" alt="Стрик, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб — окно поверх</div><img src="art/v2-web-16-streak.jpg" alt="Стрик, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li><code>1 day streak</code> → <code>3-day streak</code>: составное определение через дефис</li>
+      <li><code>Unlock today's streak</code> → кнопка прямо говорит, что надо сделать</li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="sh"><span class="num">17</span><h4>Экран оплаты</h4><span class="tag">без маскота</span></div>
+    <div class="pair">
+      <div class="shot"><div class="plat">iOS</div><img src="art/v2-ios-17-paywall.jpg" alt="Оплата, iOS" width="560" height="995" loading="lazy"></div>
+      <div class="shot"><div class="plat">Веб</div><img src="art/v2-web-17-paywall.jpg" alt="Оплата, веб" width="1100" height="619" loading="lazy"></div>
+    </div>
+    <ul class="ann">
+      <li>Цена в валюте рынка и без <code>.00</code>: длинное число воспринимается как более дорогое</li>
+      <li>Возврат, рейтинг App Store и юридический адрес — на экране, а не в подвале</li>
+      <li>«Lifetime» расшифровано: без подписки, без автосписаний, карта не сохраняется</li>
+      <li>Esco здесь запрещён — на экране денег работает только серьёзный тон</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- ═══════════ 07 НАВИГАТОР ═══════════ -->
+<section class="blk" id="nv">
+  <div class="hd"><span class="n">07</span><h2>Навигатор</h2></div>
+
+  <div class="hyp">
+    <span class="tg">Гипотеза</span>
+    <p>Вместо обычного обучающего тура — <b>подсказчик, который живёт в продукте постоянно</b>.
+      Одна цель за раз. Следующий шаг только после того, как сделан предыдущий. Четыре шага
+      за три захода. И кнопка «показать ещё раз» доступна всегда. Второй этап —
+      <b>расширение для браузера</b>, которое ведёт человека прямо в ChatGPT или Claude,
+      когда он делает задание.</p>
+    <div class="eff"><b>Что должно вырасти</b>
+      Больше людей дойдут до конца первого урока в первый же заход. Судя по экрану с нулём
+      процентов и кнопкой под нижним краем, сейчас теряется больше всего именно здесь.</div>
+  </div>
+
+  <div class="args">
+    <div><h4><i>01</i>Обычный тур пролистывают</h4>
+      <p>Подсказки подряд показывают то, что человеку прямо сейчас не нужно. Информация
+        не цепляется, потому что её не к чему привязать. Работает наоборот: одна подсказка
+        в тот момент, когда задача уже возникла.</p>
+      <span class="src">как запоминается новое</span></div>
+    <div><h4><i>02</i>Убираем выбор совсем</h4>
+      <p>Чем больше вариантов, тем дольше человек решает. Если затемнить весь экран кроме
+        одной кнопки, решать нечего — надо просто нажать. А значит и ошибиться невозможно.</p>
+      <span class="src">закон Хика</span></div>
+    <div><h4><i>03</i>По одному шагу за раз</h4>
+      <p>Четыре шага за три захода, а не десять за один. Следующий показываем тогда, когда
+        предыдущий уже стал привычкой. Иначе они мешают друг другу.</p>
+      <span class="src">постепенное раскрытие</span></div>
+    <div><h4><i>04</i>Главная проблема 45+ — не «не умею»</h4>
+      <p>А «стыдно переспросить». Кнопка «покажи, где что», доступная всегда и ни к чему
+        не обязывающая, снимает этот страх напрямую. Она важнее, чем сам тур.</p>
+      <span class="src">страх выглядеть глупо</span></div>
+    <div><h4><i>05</i>Почему расширение</h4>
+      <p>Главная дыра в обучении ИИ — переход от урока к реальной работе. Человек прочитал
+        про роль и тон, открыл ChatGPT и завис. Подсказчик выходит за пределы нашего продукта
+        и помогает там, где человек реально что-то делает.</p>
+      <span class="src">перенос знания в практику</span></div>
+    <div><h4><i>06</i>Почему его можно выключить навсегда</h4>
+      <p>Помощник, от которого нельзя избавиться, превращается в скрепку из старого Word.
+        Кнопка «выключить» прямо в подсказке — условие того, что его будут терпеть.</p>
+      <span class="src">человек должен управлять</span></div>
+  </div>
+
+  <ul class="rl">
+    <li class="hdr"><b>Что</b><span>Решение</span><span>Почему</span></li>
+    <li><b>Одна цель за раз</b><span>Экран затемняется, подсвечена ровно одна кнопка.</span><span class="why">Решать нечего — значит, ошибиться невозможно.</span></li>
+    <li><b>Шаг после действия</b><span>Следующая подсказка появляется, когда сделан предыдущий шаг. Не по таймеру.</span><span class="why">По таймеру и свайпу тур проматывают не глядя.</span></li>
+    <li><b>4 шага за 3 захода</b><span>① начать урок → ② задать вопрос в чате → ③ забрать стрик → ④ выбрать челлендж.</span><span class="why">Десять подсказок за один заход — и не запомнится ни одна.</span></li>
+    <li><b>«Покажи ещё раз»</b><span><code>Show Me Around</code> в профиле, доступна всегда.</span><span class="why">Главный страх этой аудитории — переспрашивать. Кнопка без последствий его снимает.</span></li>
+    <li><b>Помощь при зависании</b><span>45 секунд без действий — одна подсказка, не чаще раза на экран.</span><span class="why">Застряв, человек 45+ чаще закрывает приложение, чем пишет в поддержку.</span></li>
+    <li><b>Выключается навсегда</b><span>Одним нажатием прямо из подсказки.</span><span class="why">Помощник без кнопки «выключить» превращается в скрепку из старого Word.</span></li>
+  </ul>
+</section>
+
+<section class="blk" style="margin-top:3.5rem;">
+  <div class="final">
+    <p>Мы убираем всё, что выглядит как обман. Закрываем юридический риск по доступности сразу
+      на трёх рынках. И приводим интерфейс к тому, <b>как человек 45+ на самом деле видит экран
+      и ищет на нём глазами</b>.</p>
+    <p>Красота получится сама. Она здесь не цель.</p>
+  </div>
+</section>
+
+<footer>
+  <span>Jobescape · UX/UI трек · итоговое решение</span>
+  <span>17 экранов · 34 макета · контрасты по формуле WCAG</span>
+</footer>
+
+</div>
+
+</body></html>

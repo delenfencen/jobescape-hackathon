@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Обзор · Jobescape</title>
+<link rel="stylesheet" href="assets/doc.css">
+<link rel="stylesheet" href="assets/shell.css">
+</head>
+<body>
+
+<div class="topbar">
+  <button class="burger" data-nav-toggle aria-label="Меню разделов">☰</button>
+  <b>Обзор</b>
+  <button class="tbtn" data-theme-toggle type="button">Система</button>
+</div>
+<button class="scrim" data-nav-toggle aria-label="Закрыть меню" tabindex="-1"></button>
+
+<aside class="shell-side">
+  <a class="shell-side__brand" href="index.html">
+    <span class="mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5 14.3 9 21 11.3 14.3 13.6 12 20.1 9.7 13.6 3 11.3 9.7 9 12 2.5Z" fill="currentColor"/></svg> Jobescape</span>
+    <span class="tag">Хакатон · решение</span>
+  </a>
+  <nav class="shell-side__nav">
+    <div class="navgroup__label">Презентация</div>
+    <a class="navlink is-current" href="index.html"><span class="n">·</span><span>Обзор</span></a>
+    <div class="navgroup__label">Решение по трекам</div>
+    <a class="navlink" href="ux-ui.html"><span class="n">01</span><span>UX / UI</span></a>
+    <a class="navlink" href="lessons.html"><span class="n">02</span><span>Уроки</span></a>
+    <a class="navlink" href="bugs.html"><span class="n">03</span><span>Баги</span></a>
+    <a class="navlink" href="money.html"><span class="n">04</span><span>Монетизация</span></a>
+  </nav>
+  <div class="shell-side__foot">
+    <span>Тема</span>
+    <button class="tbtn" data-theme-toggle type="button">Система</button>
+  </div>
+</aside>
+
+<main class="main">
+<div class="page">
+  <header class="phead">
+    <div class="brow"><span class="d"></span><span>Хакатон</span><span>Jobescape</span><span>US · CA · UK</span><span>ЦА 45+</span></div>
+    <h1>Решение: что меняем в продукте и почему</h1>
+    <p class="sub">Четыре трека: <b>UX / UI</b>, <b>уроки</b>, <b>баги</b> и <b>монетизация</b>. Каждый устроен одинаково — сначала гипотеза, что предлагаем. Потом аргументы, почему это сработает. Потом список правок с объяснением к каждой.</p>
+  </header>
+
+  <div class="tracks">
+    <a class="track" href="ux-ui.html" data-state="ready">
+      <span class="track__n">01
+        <span class="state ready">готово</span></span>
+      <h2>UX / UI</h2>
+      <p>Типографика, цвет, маскот, расположение и навигатор. Шесть разделов, 13 экранов в вебе и на iOS.</p>
+      <span class="track__go">6 разделов · 13 экранов · 27 макетов →</span>
+    </a>
+    <a class="track" href="lessons.html" data-state="ready">
+      <span class="track__n">02
+        <span class="state ready">готово</span></span>
+      <h2>Уроки</h2>
+      <p>Онбординг, форматы уроков, удержание и геймификация. Восемь разделов на данных когорты в 37 691 покупку.</p>
+      <span class="track__go">8 разделов · 31 слайд презентацией →</span>
+    </a>
+    <a class="track" href="bugs.html" data-state="ready">
+      <span class="track__n">03
+        <span class="state ready">готово</span></span>
+      <h2>Баги</h2>
+      <p>Ручной проход платящим пользователем: 16 находок, три корня и порядок починки.</p>
+      <span class="track__go">16 находок · 11 багов · 2 блокера →</span>
+    </a>
+    <a class="track" href="money.html" data-state="ready">
+      <span class="track__n">04
+        <span class="state ready">готово</span></span>
+      <h2>Монетизация</h2>
+      <p>Сертификат как канал привлечения и девять точек апселла по пути пользователя.</p>
+      <span class="track__go">реферальная петля · 9 точек апселла →</span>
+    </a>
+  </div>
+
+  <section class="sec" id="method">
+    <div class="sec__hd"><span class="n">·</span><h2>Как читать каждый раздел</h2></div>
+    <p>Мы не показываем «красивые экраны». В каждом разделе сначала решение, потом
+      доказательство, потом правки по пунктам — чтобы на любой вопрос «почему так»
+      уже был ответ на странице.</p>
+    <div class="shell-tbl">
+      <table>
+        <thead><tr><th>Блок</th><th>Что в нём</th><th>Зачем он нужен</th></tr></thead>
+        <tbody>
+          <tr><td><b>Гипотеза</b></td><td>Что предлагаем изменить, одним абзацем.</td>
+              <td>Чтобы решение читалось за 20 секунд, без макетов.</td></tr>
+          <tr><td><b>Что должно вырасти</b></td><td>Метрика и способ проверки.</td>
+              <td>Гипотеза без проверки — это мнение.</td></tr>
+          <tr><td><b>Аргументы</b></td><td>Исследования, нормы и примеры рынка.</td>
+              <td>Аудитория 45+ ведёт себя иначе, чем мы. Проверяем, а не угадываем.</td></tr>
+          <tr><td><b>Решение по пунктам</b></td><td>Таблица «что · решение · почему».</td>
+              <td>Чтобы правку можно было взять в работу как есть.</td></tr>
+          <tr><td><b>Макеты</b></td><td>Экран в вебе и на iOS, с пояснениями.</td>
+              <td>Одно и то же решение должно работать на обеих платформах.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" id="common">
+    <div class="sec__hd"><span class="n">·</span><h2>Общее решение</h2></div>
+    <div class="slot">
+      <span class="slot__tag">Слот под контент</span>
+      <h3>Сюда встанет сводное решение по трём трекам</h3>
+      <p>Место под общий текст: связка UX/UI, уроков и багов в одно решение —
+        что делаем, в каком порядке и что это даёт. Пришли текст, и он встанет сюда
+        в той же вёрстке, что и остальные разделы.</p>
+      <ul>
+        <li>Сводная гипотеза по продукту</li>
+        <li>Что общего у трёх треков и где они пересекаются</li>
+        <li>Порядок внедрения и метрики целиком</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="pfoot"><span>Jobescape · презентация решения</span><span>Обзор · четыре трека</span></footer>
+</div>
+</main>
+
+<script src="assets/shell.js"></script>
+</body>
+</html>

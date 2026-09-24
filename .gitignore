@@ -1,0 +1,9 @@
+# системный мусор
+.DS_Store
+._*
+Thumbs.db
+
+# временные файлы сборки
+_build/__pycache__/
+*.pyc
+.*.tmp
