@@ -121,6 +121,14 @@ for sid, replacement in uxui_patches.PATCHES.items():
     frag = frag[:m.start()] + replacement + frag[m.end():]
     print(f'патч: раздел #{sid} заменён')
 
+for old, new in getattr(uxui_patches, 'REPLACEMENTS', []):
+    if old not in frag:
+        print('! точечная замена не нашла текст в артефакте:',
+              ' '.join(old.split())[:70], file=sys.stderr)
+        continue
+    frag = frag.replace(old, new, 1)
+    print('патч: заменено', ' '.join(new.split())[:60])
+
 (OUT / '_ux-ui.fragment.html').write_text(frag, encoding='utf-8')
 
 # ── что оболочке нужно знать про разделы и шапку ────────────────────────────
