@@ -12,8 +12,8 @@ import sys
 
 OUT = pathlib.Path(__file__).resolve().parent.parent
 SRC = pathlib.Path(
-    '/Users/delenfencen/Downloads/hackathon/final/все слайд/'
-    'Уроки_и_персональный_план_для_аудитории_45+.html')
+    '/Users/delenfencen/Downloads/hackathon/'
+    'Уроки_и_персональный_план_для_аудитории_45+_2.html')
 DEST = OUT / 'lessons-deck.html'
 
 # что вырезаем — id слайда в исходном деке

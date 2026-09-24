@@ -432,3 +432,6 @@ a.track[data-state="wip"] .track__go{color:var(--ink-3);}
 }
 .doc .idea__r a:hover, .doc .rl a:hover, .doc p a:hover,
 .doc figcaption a:hover, .doc td a:hover{text-decoration-thickness:2px;}
+
+/* Перечисление внутри пояснительной строки — выделяем, не превращая в курсив. */
+.doc .line em{font-style:normal; color:var(--ink); font-weight:600;}
